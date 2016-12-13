@@ -1,21 +1,81 @@
-## W
+# AKA Optics
 
-W est un framework minimaliste. Il suit les structures et les grand thèmes des frameworks PHP OO MVC actuels, tout en en facilitant l'approche. 
+[![N|Solid](http://www.cominjob.com/media/logo-4505.png)](http://www.wf3.fr/)
 
----
+> [AKA Optics](http://www.akaoptics.com/) is a mirror deformable website builds with HTML5, CSS3 & Javascript.
 
-####Pour télécharger le framework et en consulter la documentation :
+We also use :
+  - jQuery and AnimateCSS
+  - PHP & MYSQL to administrate the data and serve the files
 
-1. Dans un terminal : 
+We are working on this team project as the evaluation project of our awesome web dev school Webforce3.
 
-  ```
-  cd c:/xampp/htdocs
-  composer create-project webforce3/w nom_de_mon_projet
-  ```
+- Collaborating on a project
+- Use the web dev techniques we learnt
+- Show our experience and motivation
 
-2. Naviguez vers http://localhost/nom_de_mon_projet/docs/tuto/
+One more thing, we are *absolutely happy* to work together on this project, we've selected AKA Optics because we believe in this international startup and we are all working with love.
+
+### Our Team
+* [Chloé Carpentier]
+* [Leonardo Balland]
+* [Lionel Lafont]
+* [Kevin Silvert]
+
+### Tech
+
+AKA Optics Project uses a number of tools to work properly:
+
+* [HTML5] - HTML enhanced for web apps!
+* [SublimeText3] - Sublime Text is a sophisticated text editor for code, markup and prose.
+* [jQuery] - duh
+* [Bootstrap] - the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web
+* [PHP] - PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.
+* [jQuery] - duh
+
+### Installation
+
+Aka Optics Project requires [Apache](https://www.apache.org/) to run.
+
+Download and extract the [latest release](https://github.com/digitalz4k/akaproject).
+
+Start the Apache server and go to your root url.
+
+```sh
+$ git clone https://github.com/digitalz4k/akaproject.git akaproject
+$ cd akaproject
+$ > http://localhost/
+```
+
+### Development
+
+### Design
+![Home](https://akaproject-sexypanda.c9users.io/src/page_home.jpg)
+
+![Products](https://akaproject-sexypanda.c9users.io/src/page_products.jpg)
+
+![Single product](https://akaproject-sexypanda.c9users.io/src/page_product-single.jpg)
+
+![Company](https://akaproject-sexypanda.c9users.io/src/page_company.jpg)
+
+![Contact](https://akaproject-sexypanda.c9users.io/src/page_contact.jpg)
+
+### Todos
+ - Pages [ Home, Products, Product-single, Company, Achievements, Contact]
+ - Create the application architecture [Partials, Pages]
+ - Integrate the front-end part
+ - Develop the POO classes
+ - Add administration section to manage content and data
+
+[//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
 
-####Auteurs :
-* Guillaume Sylvestre : [@gsylvestre](https://github.com/gsylvestre) (auteur original)
-* Axel Wargnier : [@axessweb](https://github.com/axessweb)
+   [Lionel Lafont]: <https://twitter.com/LafontLft>
+   [Leonardo Balland]: <https://twitter.com/leonardoballand>
+   [Chloé Carpentier]: <https://github.com/chlooe>
+   [Kevin Silvert]: <mailto:kevin.silvert@hotmail.fr>
+   [SublimeText3]: <https://www.sublimetext.com/>
+   [jQuery]: <http://jquery.com>
+   [html5]: <http://www.w3schools.com/html/html5_intro.asp>
+   [php]: <http://www.w3schools.com/php/>
+   [Bootstrap]: <http://getbootstrap.com/>
