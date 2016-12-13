@@ -12,10 +12,7 @@ class DefaultController extends Controller
 	 */
 	public function home()
 	{
-		$params = array(
-			'test' => false
-		);
-		$this->show('default/home', $params);
+		$this->show('default/home');
 	}
 	
 	public function products()
