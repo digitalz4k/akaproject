@@ -26,6 +26,7 @@ One more thing, we are *absolutely happy* to work together on this project, we'v
 
 AKA Optics Project uses a number of tools to work properly:
 
+* [W] - W is a minimalist backend framework owned by Webforce3
 * [HTML5] - HTML enhanced for web apps!
 * [SublimeText3] - Sublime Text is a sophisticated text editor for code, markup and prose.
 * [jQuery] - duh
@@ -44,7 +45,11 @@ Start the Apache server and go to your root url.
 ```sh
 $ git clone https://github.com/digitalz4k/akaproject.git akaproject
 $ cd akaproject
-$ > http://localhost/
+$ composer install
+$ cp app/config.dist.php app/config.php
+$ vim app/config.php
+$ vim app/routes.php
+$ > http://localhost/akaproject/public/
 ```
 
 ### Development
@@ -61,9 +66,9 @@ $ > http://localhost/
 ![Contact](https://akaproject-sexypanda.c9users.io/src/page_contact.jpg)
 
 ### Todos
- - Pages [ Home, Products, Product-single, Company, Achievements, Contact]
- - Create the application architecture [Partials, Pages]
- - Integrate the front-end part
+ - Pages [ ~~Home~~, ~~Products~~, ~~Product-single~~, ~~Company~~, Achievements, ~~Contact~~]
+ - ~~Create the application architecture [Partials, Pages]~~
+ - ~~Integrate the front-end part~~
  - Develop the POO classes
  - Add administration section to manage content and data
 
@@ -76,6 +81,7 @@ $ > http://localhost/
    [Kevin Silvert]: <mailto:kevin.silvert@hotmail.fr>
    [SublimeText3]: <https://www.sublimetext.com/>
    [jQuery]: <http://jquery.com>
+   [W]: <https://github.com/AxessWeb/W>
    [html5]: <http://www.w3schools.com/html/html5_intro.asp>
    [php]: <http://www.w3schools.com/php/>
    [Bootstrap]: <http://getbootstrap.com/>
