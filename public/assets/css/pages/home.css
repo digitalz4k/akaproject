@@ -1,0 +1,56 @@
+/*
+*
+*	AKA Optics Website
+*	- home.CSS -
+*	By: Chloé Carpentier, Lionel Lafont, Leonardo Balland, Kevin Silvert;
+*	Created at: 10/12/2016
+*
+*/
+
+#myCarousel{
+	background-size: cover;
+	width: 50%;
+	margin: 0 auto;
+
+}
+.carousel-inner{
+	width: 100%;
+	margin: auto;
+}
+
+.carousel-control  {
+ 	background-color: rgba(255, 255, 255, 0) !important;
+ 	background-image: none !important;
+ }
+
+.carousel-indicators img {
+	max-width: 100%;
+	margin: 0px auto;
+
+}
+
+.carousel-indicators {
+	width: 100%;
+	left: auto;
+	margin-left: 0px;
+
+}
+
+.carousel-indicators.active {
+	opacity: 1;
+}
+
+.carousel-indicators li, .carousel-indicators .active {
+	height: auto;
+	width: 70px;
+	text-indent: 0px;
+}
+
+.carousel-indicators li{
+	-webkit-filter: grayscale(100%);
+}
+.carousel-indicators .active {
+	-webkit-filter: grayscale(0%);
+}
+
+

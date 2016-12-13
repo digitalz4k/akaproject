@@ -1,0 +1,48 @@
+/*
+*
+*	AKA Optics Website
+*	- HOME.CSS -
+*	By: Chloé Carpentier, Lionel Lafont, Leonardo Balland, Kevin Silvert;
+*	Created at: 10/12/2016
+*
+*/
+
+/* GENERAL STYLES */
+*{}
+html,body
+{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+header {
+    margin-bottom: 2em;
+}
+
+#header-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center center;
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+footer {
+    margin-top: 2em;
+    text-align: center;
+}
