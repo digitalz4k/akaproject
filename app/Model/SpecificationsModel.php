@@ -1,10 +1,4 @@
+// Créer une classe SpécificationsModel, qui hérite de Model, en spécifiant le namespace
+// Elle sert à travailler sur la table spécifications
+
 <?php
-
-namespace Model;
-
-use \W\Model\Model;
-
-class SpecificationsModel extends Model
-{
-    
-}
