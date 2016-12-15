@@ -6,18 +6,7 @@
     
     class ProductsModel extends Model
     {
-        public function getProduct($id)
-        {
-            $specifications = new \Model\SpecificationsModel;
-            
-            $tabSearch = $specifications->search(['product_id' => $id], 'AND');
-            
-            $product = $this->find($id);
-            
-            $res = ['product' => $product, 'spec' => $tabSearch];
-            
-            return $res;
-        }
+        
     }
     
 // Créer une classe ProductsModel, qui hérite de Model, en spécifiant le namespace

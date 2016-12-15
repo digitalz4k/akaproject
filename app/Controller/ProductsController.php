@@ -19,9 +19,17 @@
         
         public function productsSingle ($id)
         {
-            $db = new \Model\ProductsModel;
+            $products = new \Model\ProductsModel;
             
-            $db -> insert(['name' => 'prodTest']);
+            $products -> insert(['name' => 'prodTest']);
+            
+            $specifications = new \Model\SpecificationsModel;
+            
+            $tabSpec = $specifications->search(['product_id' => $id], 'AND');
+            
+            $tabProduct = $products->find($id);
+            
+            $res = ['product' => $tabProduct, 'spec' => $tabSpec];
         }
     }
 /*
