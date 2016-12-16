@@ -96,6 +96,7 @@ var sortByRegion = function(arr)
     return res;
 }
 
+    // requête ajax
 $.ajax ({
     method: 'GET',
     url: 'https://restcountries.eu/rest/v1/all'
@@ -104,31 +105,17 @@ $.ajax ({
     var countries = sortByRegion(data);
     console.log(countries);
     var listRegion;
+    
+    // parcours tableau par continent
     countries.forEach(function(region){
-        //list+= '<option value="'+region.countries+'">'+region.countries+'</option>';
         listRegion+='<optgroup label="'+region.continent+'">';
+        
+        // percours tableau par pays
         region.countries.forEach(function(country){
             listRegion+= '<option value="'+country+'">'+country+'</option>';
         });
         listRegion+='</optgroup>';
-        //<option value="'+region.continent.countries+'">'+region.continent.countries+'</option>
     });
     $('#country').append(listRegion);
 })
 
-/*
-<select>
-  <optgroup label="Groupe 1">
-    <option>Option 1.1</option>
-  </optgroup> 
-  <optgroup label="Groupe 2">
-    <option>Option 2.1</option>
-    <option>Option 2.2</option>
-  </optgroup>
-  <optgroup label="Groupe 3" disabled>
-    <option>Option 3.1</option>
-    <option>Option 3.2</option>
-    <option>Option 3.3</option>
-  </optgroup>
-</select>
-*/
