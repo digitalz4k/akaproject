@@ -29,7 +29,7 @@
         "league/plates": "^3.1",
         "ircmaxell/random-lib": "^1.2",
         "ircmaxell/password-compat": "^1.0",
-        "league/url": "^3.3",
+        "league/uri": "*",
         "phpmailer/phpmailer": "^5.2"
     },
     "autoload": {
