@@ -249,6 +249,7 @@
         </section>
     </div>
 </div>
+<?php $this->insert('products/productRequestForm') ?>;
 <?php $this->stop('main_content') ?>
 
 <?php $this->start('css') ?>

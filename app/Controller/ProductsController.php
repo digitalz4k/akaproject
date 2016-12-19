@@ -19,9 +19,9 @@
         
         public function productsSingle ($id)
         {
-            $products = new \Model\ProductsModel;
+            /*$products = new \Model\ProductsModel;
             
-            $products -> insert(['name' => 'prodTest']);
+           $products -> insert(['name' => 'prodTest']);
             
             $specifications = new \Model\SpecificationsModel;
             
@@ -29,7 +29,9 @@
             
             $tabProduct = $products->find($id);
             
-            $res = ['product' => $tabProduct, 'spec' => $tabSpec];
+            $res = ['product' => $tabProduct, 'spec' => $tabSpec]; */
+            
+            $this->show ('products/product-single');
         }
     }
 /*
