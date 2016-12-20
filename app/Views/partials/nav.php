@@ -31,7 +31,11 @@ if($header_image == true)
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/akaproject/public/">AKA Optics</a>
+        <!--logo ici-->
+        <a class="navbar-brand" href="/akaproject/public/"></a>
+        <img src="<?= $this->assetUrl('img/LogoAkaOptics.png') ?>"class="logo" alt="">
+        
+        
       </div>
   
       <!-- Collect the nav links, forms, and other content for toggling -->
