@@ -4,7 +4,7 @@
             <legend>Contact informations</legend>
                 <div class="form_group col-xs-6">
                     <label for="firstname">First name</label>
-                        <input type="text" id="firstname" class="form-control" name="firstname" placeholder="First name" autofocus/>
+                        <input type="text" id="firstname" class="form-control" name="firstname" placeholder="First name"/>
                 </div>
                 <div class="form_group col-xs-6">
                     <label for="lastname">Last name</label>

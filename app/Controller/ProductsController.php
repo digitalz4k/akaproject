@@ -12,26 +12,21 @@
         
         public function products ()
         {
-            $this->show ('products/products');
-            
-            
+            $res = $this->db->findAll();
+            $this->show ('products/products', array('products' => $res));
+
         }
         
         public function productsSingle ($id)
         {
-            /*$products = new \Model\ProductsModel;
+
+            $spec = new \Model\SpecificationsModel;
             
-           $products -> insert(['name' => 'prodTest']);
-            
-            $specifications = new \Model\SpecificationsModel;
-            
-            $tabSpec = $specifications->search(['product_id' => $id], 'AND');
-            
-            $tabProduct = $products->find($id);
-            
-            $res = ['product' => $tabProduct, 'spec' => $tabSpec]; */
-            
-            $this->show ('products/product-single');
+            $basic = $spec -> basicSpec($id);
+            $details = $spec -> detailsSpec($id);
+            $product = $this->db -> find($id);
+            $this->show ('products/product-single', array('basic' => $basic, 'details' => $details, 'product' => $product));
+
         }
     }
 /*
