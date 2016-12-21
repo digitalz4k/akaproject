@@ -11,6 +11,7 @@
 
 	<!-- Loading App CSS Styles -->
 	<link rel="stylesheet" href="<?= $this->assetUrl('css/style.css') ?>">
+	<link rel="stylesheet" href="<?= $this->assetUrl('libs/font-awesome/css/font-awesome.min.css') ?>">
 	<?= $this->section('css') ?>
 </head>
 <body>
