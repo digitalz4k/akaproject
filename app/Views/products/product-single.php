@@ -24,8 +24,10 @@
             </p>
         </div>
         <section class="row">
-            <div class="col-xs-11 col-xs-offset-1">
-                <span>+ </span>BASIC SPECIFICATIONS
+            <div class="col-xs-12 blueflag">
+                <div class="col-xs-11 col-xs-offset-1">
+                    <span>+ </span>BASIC SPECIFICATIONS
+                </div>
             </div>
             <div class="row">
                 <div class="col-xs-2 col-xs-offset-2">
@@ -74,8 +76,10 @@
             </div>
         </section>
         <section class="row">
-            <div class="col-xs-11 col-xs-offset-1">
-                <span>- </span>DETAILS SPECIFICATIONS
+            <div class="blueflag col-xs-12">
+                <div class="col-xs-11 col-xs-offset-1">
+                    <span>- </span>DETAILS SPECIFICATIONS
+                </div>
             </div>
             <div class="row">
                 <div class="col-xs-8 col-xs-offset-2">
@@ -252,5 +256,5 @@
 <?php $this->stop('main_content') ?>
 
 <?php $this->start('css') ?>
-	<link rel="stylesheet" href="<?= $this->assetUrl('css/pages/products.css') ?>">
+	<link rel="stylesheet" href="<?= $this->assetUrl('css/pages/product-single.css') ?>">
 <?php $this->stop('css') ?>

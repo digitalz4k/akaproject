@@ -65,8 +65,8 @@
 	</div>
   
     <div id="events">
-        <h2>Meet Aka Optics</h2>
-        <p>Photonics West 2017 Booth #5653 (with Active Optics NightN) 31 January - 2 February Moscone Center San Francisco – USA <a href="#"><i class="fa fa-link"></i> </a> </p>
+        <h2 class="event1">MEET AKA OPTICS</h2>
+        <p class="event2">Photonics West 2017 Booth #5653 (with Active Optics NightN) 31 January - 2 February Moscone Center San Francisco – USA <a href="#"><i class="fa fa-link"></i> </a> </p>
     </div>
     
 </section>
