@@ -1,5 +1,26 @@
-### Répertoire app/Controller
+### DASHBOARD EVENTS
+- Créer un DashboardEventsController
+- Créer un view template dans le dossier Dashboard dashboard-events
 
-Ce répertoire contient vos différents contrôleurs. Vous pouvez y créer des sous-dossiers sans problème, du moment que les espaces de noms de vos contrôleurs collent à la structure de ces dossiers. 
+#####Lister les events
+- Créer une route vers /dashboard/events qui appelle le controlleur et la vue créés ci-dessus en GET
+- Stocker les events avec la function findAll() dans une variable et la passer à la vue
+- Dans la vue, faire une boucle pour récupérer tous les events dans une liste avec pour chacun un lien editer et supprimer
 
-Tous vos contrôleurs devraient hériter de \W\Controller\Controller, le contrôleur de base du framework W. 
+#####Editer un event
+- Créer une route vers /dashboard/events/[:id] en GET|POST
+- Créer un template dashboard-editEvent
+- Dans le controlleur, créer une méthode editEvent($id)
+- Créer une condition if(!empty($_POST))
+- Récupérer dans celle-ci les infos de l'event avec la function find(id), 
+- Les stocker dans une variable
+- Les envoyer à la vue comme précédemment
+- Terminer par un else (si la vue est appelée en GET)
+- Y afficher la vue avec show()
+
+#####Supprimer un event
+- Créer une route vers /dashboard/events/delete/[:id] en GET
+- Créer dans le controller une méthode deleteEvent($id)
+- Verifier que l'event existe avec la function find($id)
+- Si OK, avec la méthode delete($id) on supprime l'event
+- Rediriger vers la liste d'event
