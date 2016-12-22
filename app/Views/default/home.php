@@ -59,7 +59,21 @@
   
     <div id="events">
         <h2>Meet Aka Optics</h2>
-        <p>Photonics West 2017 Booth #5653 (with Active Optics NightN) 31 January - 2 February Moscone Center San Francisco – USA <a href="#"><i class="fa fa-link"></i> </a> </p>
+        <ul class="list-inline list-unstyled">
+        <?php  
+        	$events = new \Model\EventsModel;
+        	
+        	$tabEvents = $events->findAll();
+        	
+        	foreach ($tabEvents as $event)
+        	{ ?>
+        		
+        			<li><a href="<?php echo $event['link'] ?>"><?php echo $event['title'] ?></a> <?php echo $event['place'] ?> <?php echo $event['description'] ?> <?php echo $event['date'] ?></li>
+        		
+        	<?php }
+        ?>
+        </ul>
+        
     </div>
     
 </section>

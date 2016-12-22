@@ -53,4 +53,14 @@
 	-webkit-filter: grayscale(0%);
 }
 
+#events ul li {
+	display: none;
+}
+
+.active {
+	display: block !important;
+	text-align: center;
+	font-size: 2em;
+}
+
 
