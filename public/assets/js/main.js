@@ -10,6 +10,7 @@
 // Only when document is ready
 $(document).ready(function(){
 
+displayEvents()
 
 //END DOCUMENT READY
 });

@@ -60,18 +60,17 @@
     <div id="events">
         <h2>Meet Aka Optics</h2>
         <ul class="list-inline list-unstyled">
-        <?php  
-        	$events = new \Model\EventsModel;
+        <?php
+        //* A METTRE DANS LE CONTROLLEUR POUR BIEN SEPARER LE BACK DU FRONT (voir DefaultController.php pour les instructions)
         	
-        	$tabEvents = $events->findAll();
+        	$events = new \Model\EventsModel; //*
+        	$tabEvents = $events->findAll(); //*
         	
+        	// S'il n'y a pas d'events, afficher un message "No events." par exemple
         	foreach ($tabEvents as $event)
         	{ ?>
-        		
-        			<li><a href="<?php echo $event['link'] ?>"><?php echo $event['title'] ?></a> <?php echo $event['place'] ?> <?php echo $event['description'] ?> <?php echo $event['date'] ?></li>
-        		
-        	<?php }
-        ?>
+        		<li><a href="<?php echo $event['link'] ?>"><?php echo $event['title'] ?></a> <?php echo $event['place'] ?> <?php echo $event['description'] ?> <?php echo $event['date'] ?></li>
+        	<?php } ?>
         </ul>
         
     </div>

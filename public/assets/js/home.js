@@ -1,6 +1,6 @@
 $('.carousel.carousel-slider').carousel({full_width: true});
 
-function display()
+function display ()
 {
     // récupérer l'event actif
     var eventActive = $('#events ul li.active');
