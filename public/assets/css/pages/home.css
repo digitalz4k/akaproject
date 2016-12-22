@@ -10,7 +10,7 @@
 *************CAROUSEL***************/
 #myCarousel{
 	background-size: cover;
-	width: 50%;
+	width: 100%;
 	margin: 0 auto;
 
 }
@@ -58,8 +58,9 @@
     border-radius: 0px;
 }
 .item h2{
-	background-color: rgba(52, 152, 219,0.8);
+/*	background-color: rgba(52, 152, 219,0.8);*/
 	color: white;
+	
 	letter-spacing: 3px;
 	text-shadow: none;
 	font-family: sans-serif;
@@ -106,5 +107,14 @@ li{
 	height: 35px;
 	text-align: center;
 	color: white;
+	
+}
+.blueband {
+	width: 100%;
+	height: auto;
+	background-color: #3498db;
+	color: white;
+	text-align: center;
+	/*position: absolute; bottom: 0; left: 0; right: 0*/
 	
 }
