@@ -1,9 +1,7 @@
-<?php $this->layout('layout', ['title' => 'Home']) ?>
-
-<?php $this->start('main_content') ?>
-
 <div class="row">
     <h1 class="text-primary text-center">Sign Up</h1>
+    
+    <div class="has-error text-center"><?php echo $error; ?></div>
     
     <form class="text-center" action="/akaproject/public/signup" method="POST">
         <div class="form-group">
@@ -23,5 +21,3 @@
         </div>
     </form>
 </div>
-
-<?php $this->stop('main_content') ?>

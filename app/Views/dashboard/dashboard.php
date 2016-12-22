@@ -1,4 +1,4 @@
-<?php $this->layout('layout', ['title' => 'Contact']) ?>
+<?php $this->layout('layout', ['title' => 'Dashboard']) ?>
 <?php $this->start('main_content') ?>
 
 <div id="main-dashboard">
@@ -14,7 +14,7 @@
 			    <!--               specs detail-->
 			    <li> <a href="#"> Modification / Supression produit</a></li>
 				<li> <a href="#"> Nouvel évènement</a></li>
-				<li> <a href="#"><i class="glyphicon glyphicon-off" aria-hidden="true"></i> Déconnexion</a></li>
+				<li> <a href="/akaproject/public/aka-admin/logout"><i class="glyphicon glyphicon-off" aria-hidden="true"></i> Déconnexion</a></li>
 			</ul>
 		</nav>
     

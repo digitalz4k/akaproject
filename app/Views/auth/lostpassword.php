@@ -1,11 +1,15 @@
-<?php $this->layout('layout', ['title' => 'Home']) ?>
+<?php $this->layout('layout', ['title' => 'Lost password']) ?>
 
 <?php $this->start('main_content') ?>
 
 <div class="row">
     <h1 class="text-primary text-center">Lost password?</h1>
     
-    <form class="text-center" action="/akaproject/public/lostpassword" method="POST">
+    <div class="has-error text-center">
+        <?php echo $error; ?>
+    </div>
+    
+    <form class="text-center" method="POST">
         <div class="form-group">
             <input type="text" name="email" placeholder="Email"/>
         </div>

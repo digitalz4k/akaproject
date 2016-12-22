@@ -50,7 +50,7 @@ class AuthController extends Controller
                 'last_name' => $_REQUEST['last_name'],
                 'email' => $_REQUEST['email'],
                 'password' => $password,
-                'role' => 'admin',
+                'role' => 'user',
                 'created_at' => date('Y-m-d h:i:s')
             ];
              
@@ -60,7 +60,7 @@ class AuthController extends Controller
             {
                 $this->redirectToRoute('auth_login');
             } else {
-                echo "Error! User not added to DB...";
+                $this->show('auth/dashboardAddUser', ["error" => "Error: User not added to database."]);
             }
              
         } else {
@@ -83,9 +83,16 @@ class AuthController extends Controller
 	public function lostPassword ()
 	{
 	    if(!empty($_POST)) {
+	        $user = $this->db->search(["email" => $_POST['email']]);
+	        if($user)
+	        {
+	           // renvoyer les informations de connexion par email
+	           $this->show('auth/login', ["msg" => "Check your inbox at <span class='text-primary'>".$user[0]['email']."</span> to get your password."]);
+	        } else {
+	           $this->show('auth/lostpassword', ["error" => "Email not found."]);
+	        }
 	        // renvoyer les informations de connexion par email
 	        // rediriger vers page login
-	        $this->show('auth/login');
 	    } else {
 		    $this->show('auth/lostpassword');
 	    }

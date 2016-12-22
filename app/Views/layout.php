@@ -15,7 +15,6 @@
 	<?= $this->section('css') ?>
 </head>
 <body>
-	
 
 	<header>
 		<?= $this->insert('partials/nav') ?>
