@@ -101,6 +101,16 @@ li{
 	font-weight: bold;
 }
 
+#events ul li {
+	display: none;
+}
+
+.active {
+	display: block !important;
+	text-align: center;
+	font-size: 2em;
+}
+
 .event2 {
 	background-color: #3498db;
 	width: 100%;

@@ -93,6 +93,7 @@ var sortByRegion = function (arr) {
 }
 
 
+<<<<<<< HEAD
 // recuperer la liste
 // trier les regions 
 // afficher les régions
