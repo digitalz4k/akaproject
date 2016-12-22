@@ -5,7 +5,7 @@
 <div class="row">
     <h1 class="text-primary text-center">Login</h1>
     
-    <div class="has-error"><?php echo $error; ?></div>
+    <div class="has-error text-center"><?php echo $error; ?></div>
     
     <form action="/akaproject/public/login" method="POST" class="text-center">
         <div class="form-group">

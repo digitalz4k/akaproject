@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 <?php
 
 namespace Controller;
@@ -23,9 +21,9 @@ class ProductsController extends Controller
     }
 
 }
-=======
+
 // créer une classe products qui hérite de la classe Model et spécifier le namespace
-=======
+
 <?php
     namespace Controller;
     
