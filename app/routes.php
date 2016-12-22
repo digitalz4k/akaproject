@@ -2,7 +2,7 @@
 	
 	$w_routes = array(
 		['GET', '/', 'Default#home', 'home'],
-		['GET', '/products', 'Default#products', 'products'],
+		['GET', '/products', 'Products#products', 'products'],
 		['GET', '/products/[:id]', 'Products#productsSingle', 'products_single'],
 		['GET', '/achievements', 'Default#achievements', 'achievements'],
 		['GET', '/company', 'Default#company', 'company'],

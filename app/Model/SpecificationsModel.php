@@ -3,30 +3,10 @@
 // Elle sert à travailler sur la table spécifications
 namespace Model;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-namespace Model;
-
-=======
->>>>>>> formContact
 use \W\Model\Model;
 
 class SpecificationsModel extends Model
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public function basicSpec ($product_id)
-    {
-        return $this->search(["product_id" => $product_id, "type" => "basic"], "AND");
-    }
-=======
-    
->>>>>>> slider
-}
-=======
-<?php
->>>>>>> Models
-=======
     public function basicSpec ($product_id)
     {
         return $this->search(['product_id' => $product_id, 'type' => 'basic'], 'AND');
@@ -37,4 +17,3 @@ class SpecificationsModel extends Model
         return $this->search(['product_id' => $product_id, 'type' => 'details'], 'AND');
     }
 }
->>>>>>> formContact

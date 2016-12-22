@@ -1,30 +1,4 @@
 <?php
-
-namespace Controller;
-
-use \W\Controller\Controller;
-
-class ProductsController extends Controller
-{
-
-    public function productsSingle($id)
-    {
-        $db = new \Model\SpecificationsModel;
-        
-        $basic = $db->basicSpec($id);
-        
-        $this->show("products/product-single", [
-            "product" => "product", 
-            "basicSpec" => $basic, 
-            "detailsSpec" => "detailsSpecs"
-        ]);
-    }
-
-}
-
-// créer une classe products qui hérite de la classe Model et spécifier le namespace
-
-<?php
     namespace Controller;
     
     class ProductsController extends \W\Controller\Controller
@@ -39,8 +13,7 @@ class ProductsController extends Controller
         public function products ()
         {
             $res = $this->db->findAll();
-            $this->show ('products/products', array('products' => $res));
-
+            $this->show ('products/products', ["products" => $res]);
         }
         
         public function productsSingle ($id)
@@ -51,6 +24,7 @@ class ProductsController extends Controller
             $basic = $spec -> basicSpec($id);
             $details = $spec -> detailsSpec($id);
             $product = $this->db -> find($id);
+            
             $this->show ('products/product-single', array('basic' => $basic, 'details' => $details, 'product' => $product));
 
         }
@@ -82,5 +56,3 @@ class ProductsController extends Controller
 // envoyer le tableau à la vue comme pour la méthode précédente
 */
 ?>
-
->>>>>>> slider

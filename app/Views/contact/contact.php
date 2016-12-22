@@ -22,11 +22,7 @@
     <div class="col-sm-4">
         <h3><i class="fa fa-info"></i> Contact information</h3>
         <ul class="list-unstyled">
-<<<<<<< HEAD
             <li><a href="mailto:contact@akaoptics.com">contact@akaoptics.com</a></li>
-=======
-            <li><a href="mailto:contact@akaoptics.com" title="contact email">contact@akaoptics.com</a></li>
->>>>>>> Models
             <li>Tel: +33 4 91 05 50 86</li>
             <li>Fax: +33 4 91 05 50 87</li>
         </ul>

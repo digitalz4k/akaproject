@@ -1,16 +1,7 @@
-
 <?php $this->layout('layout', ['title' => 'Product name']) ?>
 
-
 <?php $this->start('main_content') ?>
-<<<<<<< HEAD
 
-<?php debug($product) ?>
-<?php debug($basicSpec) ?>
-<?php debug($detailsSpec) ?>
-
-
-=======
 <div id="product-single">
     
     <div class="row">
@@ -28,15 +19,10 @@
             </p>
         </div>
         <section class="row">
-<<<<<<< HEAD
             <div class="col-xs-12 blueflag">
                 <div class="col-xs-11 col-xs-offset-1">
                     <span>+ </span>BASIC SPECIFICATIONS
                 </div>
-=======
-            <div class="col-xs-11 col-xs-offset-1">
-                <span><i class="fa fa-3x fa-plus"></i></span>BASIC SPECIFICATIONS
->>>>>>> formContact
             </div>
             <div class="row">
                 <?php foreach ($basic as $basicSpec)
@@ -55,15 +41,10 @@
             
         </section>
         <section class="row">
-<<<<<<< HEAD
             <div class="blueflag col-xs-12">
                 <div class="col-xs-11 col-xs-offset-1">
                     <span>- </span>DETAILS SPECIFICATIONS
                 </div>
-=======
-            <div class="col-xs-11 col-xs-offset-1">
-                <span><i class="fa fa-3x fa-minus"></i></span>DETAILS SPECIFICATIONS
->>>>>>> formContact
             </div>
             <div class="row">
                 <div class="col-xs-8 col-xs-offset-2">
@@ -88,14 +69,9 @@
         </section>
     </div>
 </div>
-<<<<<<< HEAD
->>>>>>> slider
-=======
-<!--<?php debug($product) ?>
-<?php debug($basic) ?>
-<?php debug($details) ?>-->
+
 <?php $this->insert('products/productRequestForm') ?>;
->>>>>>> formContact
+
 <?php $this->stop('main_content') ?>
 
 <?php $this->start('css') ?>

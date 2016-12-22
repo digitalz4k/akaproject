@@ -7,27 +7,26 @@
     <h2 class="text-primary text-center">AKA Optics manufactures Adaptive Optics Closed Loop Systems,<br/> Deformable Mirrors, Wavefront Sensors and M2 Meters</h2>
     
     <div class="swiper">
-    <ul class="swipe-section">
-      <li class="swipe-item col col-xs-4 swipe-helper">
-          <div class="swipe-content">
-              <img src="<?= $this->assetUrl('img/swipe_helper.png') ?>" alt="helper" width="40">
-          </div>
-      </li>
-      <?php foreach ($products as $product)
-      { ?>
-        <li class="swipe-item col col-xs-4">
-            <div class="swipe-content">
-                <h3><?php echo $product['name']; ?></h3>
-                <p><?php echo $product['accroche']; ?></p>
-                <div class="swipe-footer">
-                    <a href="/akaproject/public/products/<?php echo $product['id']; ?>" class="btn btn-primary btn-lg">Discover <i class="fa fa-arrow-right"></i> </a>
+        <ul class="swipe-section">
+            <li class="swipe-item col col-xs-4 swipe-helper">
+                <div class="swipe-content">
+                    <img src="<?= $this->assetUrl('img/swipe_helper.png') ?>" alt="helper" width="40">
                 </div>
-            </div>
-        </li>
-        <?php } ?>
-        
-    </ul>
-  </div>
+            </li>
+            <?php foreach ($products as $key => $product)
+            { ?>
+            <li class="swipe-item col col-xs-4 <?php if($key == 1) { echo "active"; } ?>">
+                <div class="swipe-content">
+                    <h3><?php echo $product['name']; ?></h3>
+                    <p><?php echo $product['accroche']; ?></p>
+                    <div class="swipe-footer">
+                        <a href="/akaproject/public/products/<?php echo $product['id']; ?>" class="btn btn-primary btn-lg">Discover <i class="fa fa-arrow-right"></i> </a>
+                    </div>
+                </div>
+            </li>
+            <?php } ?>
+        </ul>
+    </div>
     
 </div>
 <?php $this->stop('main_content') ?>

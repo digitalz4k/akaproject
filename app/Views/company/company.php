@@ -3,10 +3,7 @@
 
 <?php $this->start('main_content') ?>
 <div id="company">
-<<<<<<< HEAD
-=======
 
->>>>>>> Models
 <section class="row">
     <div class="col-xs-8 col-xs-offset-2">
         <h2 class="text-primary text-center">AKA OPTICS IS A RELIABLE PARTNER FOR YOUR PROJECTS, AS A MANUFACTURER OF ADAPTIVE OPTICS</h2>
