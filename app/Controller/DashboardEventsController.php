@@ -14,7 +14,6 @@ class DashboardEventsController extends \W\Controller\Controller
     {
         $res = $this->db->findAll();
         $this->show ('dashboard/dashboard-events', ["events" => $res]);
-
     }
     
     public function editEvents($id)
@@ -27,8 +26,5 @@ class DashboardEventsController extends \W\Controller\Controller
         
     }
 }
-
-
-
 
 ?>
