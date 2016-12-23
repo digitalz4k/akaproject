@@ -40,9 +40,9 @@ class UploadController extends Controller
         
         if($this->fileStatus !== false) // If no error
         {
-         $this->uploadFiles(); // Upload files
+         return $this->uploadFiles(); // Upload files
         } else {
-            $this->returnErrors(); // Else return errors
+            return $this->returnErrors(); // Else return errors
         }
     }
     
@@ -120,7 +120,7 @@ class UploadController extends Controller
         {
             return $this->uploadPaths;
         } else {
-            $this->returnErrors();
+            return $this->returnErrors();
         }
     }
     
