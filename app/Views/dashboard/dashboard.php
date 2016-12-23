@@ -1,17 +1,9 @@
 <?php $this->layout('layout', ['title' => 'Contact']) ?>
 <?php $this->start('main_content') ?>
 
-<div class="row">
-    <form enctype="multipart/form-data" method="POST">
-        <input type="file" name="picture"/>
-        <input type="file" name="picture2"/>
-        <input type="submit" value="Upload"/>
-    </form>
-</div>
-
 <div id="main-dashboard">
     <div class="row">
-        <nav class=" col-xs-2">
+        <nav class="col-xs-2">
 			<ul class="nav nav-pills nav-stacked" >
 				<li> <a href="#"><i class="glyphicon glyphicon-home" aria-hidden="true"></i> Acceuil</a></li>				
                 <li> <a href="#"> Nouveau produit</a></li>

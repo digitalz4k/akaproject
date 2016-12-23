@@ -7,7 +7,7 @@
 		['GET', '/achievements', 'Default#achievements', 'achievements'],
 		['GET', '/company', 'Default#company', 'company'],
 		['GET', '/contact', 'Default#contact', 'contact'],
-		['GET|POST', '/dashboard', 'Dashboard#dashboard', 'dashboard'],
+		['GET', '/dashboard', 'Dashboard#dashboard', 'dashboard'],
 		
 		['GET|POST', '/login', 'Auth#login', 'auth_login'],
 		['GET', '/logout', 'Auth#logout', 'auth_logout'],
