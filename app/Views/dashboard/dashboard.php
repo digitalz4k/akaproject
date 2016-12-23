@@ -1,6 +1,14 @@
 <?php $this->layout('layout', ['title' => 'Contact']) ?>
 <?php $this->start('main_content') ?>
 
+<div class="row">
+    <form enctype="multipart/form-data" method="POST">
+        <input type="file" name="picture"/>
+        <input type="file" name="picture2"/>
+        <input type="submit" value="Upload"/>
+    </form>
+</div>
+
 <div id="main-dashboard">
     <div class="row">
         <nav class=" col-xs-2">
