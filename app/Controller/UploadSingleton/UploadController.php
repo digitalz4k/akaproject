@@ -1,6 +1,6 @@
 <?php
 
-namespace Controller;
+namespace Controller\UploadSingleton;
 
 use \W\Controller\Controller;
 
@@ -8,8 +8,9 @@ class UploadController extends Controller
 {
     protected $dir;
     protected $errors;
-    public $uploadPaths;
+    protected $uploadPaths;
     protected $types;
+    protected $inputNames;
     
     private $files;
     private $fileStatus;
@@ -34,6 +35,7 @@ class UploadController extends Controller
     */
     public function uploadThis ($files)
     {
+        $this->getInputName();
         $this->checkDir(); // Check if directory exists else try to create it
         $this->setFiles(); // Prepare files to be uploaded
         $this->checkFiles(); // Check files before upload
@@ -46,11 +48,30 @@ class UploadController extends Controller
         }
     }
     
+    public function getJSON ()
+    {
+        $array = [
+            "paths" => $this->uploadPaths,
+            "errors" => $this->errors
+        ];
+        
+        return json_encode($array);
+    }
+    
+    private function getInputName ()
+    {
+        foreach($_FILES as $key => $file)
+        {
+            $this->inputNames [] = $key;   
+        }
+    }
+    
     private function checkDir ()
     {
         if( !is_dir($this->dir) ) {
             if( !mkdir($this->dir, 0755) ) {
                 die('Error: Directory ' .$this->dir. ' cannot be created. Check your admin rights or create the directory manually.');
+                return false;
             }
         }
     }
@@ -70,16 +91,15 @@ class UploadController extends Controller
     {
         foreach($this->files as $file)
         {
-            $this->checkImage($file);
+            $this->checkImage($file); // Check if file is a picture
         }
     }
     
     private function checkImage ($file)
     {
-        $targetFile = $this->dir . basename($file["name"]);
-        $imageFileType = pathinfo($targetFile, PATHINFO_EXTENSION);
+        $imageFileType = pathinfo($this->dir . basename($file["name"]), PATHINFO_EXTENSION); // Get file extension
         
-        if(in_array(strtolower($imageFileType), $this->types)) //Check image extension
+        if(in_array(strtolower($imageFileType), $this->types)) // Compare image extension with authorized file types
         {
             if(getimagesize($file["tmp_name"])) //Check image file size
             {
@@ -104,7 +124,7 @@ class UploadController extends Controller
             {
                 $this->uploadStatus = true;
                 $this->uploadPaths [] = [
-                    "id" => $key,
+                    "inputName" => $this->inputNames[$key],
                     "file_name" => $file["name"],
                     "file_upload_path" => $filePath
                 ];
