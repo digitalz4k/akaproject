@@ -14,14 +14,21 @@
 
 #####Editer un event
 - Créer une route vers /dashboard/events/[:id] en GET|POST
+-   ok
 - Créer un template dashboard-editEvent
+-   ok
 - Dans le controlleur, créer une méthode editEvent($id)
+-   ok
 - Créer une condition if(!empty($_POST))
-- Récupérer dans celle-ci les infos de l'event avec la function find(id), 
+- Récupérer dans celle-ci les infos de l'event avec la function find(id),
+-   ok
 - Les stocker dans une variable
+-   ok
 - Les envoyer à la vue comme précédemment
+-   ok
 - Terminer par un else (si la vue est appelée en GET)
 - Y afficher la vue avec show()
+-   ???
 
 #####Supprimer un eventgit 
 - Créer une route vers /dashboard/events/delete/[:id] en GET
