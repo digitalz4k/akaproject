@@ -8,8 +8,9 @@
 - Créer une route vers /dashboard/events qui appelle le controlleur et la vue créés ci-dessus en GET
 -   ok
 - Stocker les events avec la function findAll() dans une variable et la passer à la vue
--   ok
+    ok
 - Dans la vue, faire une boucle pour récupérer tous les events dans une liste avec pour chacun un lien editer et supprimer
+-   ok
 
 #####Editer un event
 - Créer une route vers /dashboard/events/[:id] en GET|POST
