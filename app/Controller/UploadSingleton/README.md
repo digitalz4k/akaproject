@@ -4,7 +4,7 @@ Singleton permettant de mettre en place un système d'upload dans le framework W
 
 ## USAGE
 - Initialiser une instance de l'objet Upload
-- La fonction uploadIt() sert à uploader un tableau de fichier. Elle retourne un tableau des chemins si l'upload a bien été effectué, ou un tableau d'erreurs dans l'autre cas
+- La fonction uploadThis() sert à uploader un tableau de fichier. Elle retourne un tableau des chemins si l'upload a bien été effectué, ou un tableau d'erreurs dans l'autre cas
 - La fonction getJSON() permet de recupérer les chemins et les erreurs en JSON. Elle ne s'utilise qu'après avoir uploader des fichiers
 
 
