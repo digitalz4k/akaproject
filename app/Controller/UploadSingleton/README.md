@@ -22,5 +22,4 @@ Singleton permettant de mettre en place un système d'upload dans le framework W
     
 ## AUTEUR
 Leonardo BALLAND - balland.leonardo@outlook.fr
-https://leonardoballand.com
 [Website](https://leonardoballand.com)
