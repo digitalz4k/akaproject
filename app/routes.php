@@ -1,5 +1,6 @@
 <?php
 	
+	// méthode GET ou POST, chemin, nom de classe, méthode de classe, nom de la route
 	$w_routes = array(
 		/* GENERAL ROUTES */
 		['GET', '/', 'Default#home', 'home'],
@@ -14,7 +15,7 @@
 		['POST', '/events/add', 'Dashboard#eventsAdd', 'dashboard_events_add'],
 		['POST', '/events/edit/[i:id]', 'Dashboard#eventsEdit', 'dashboard_events_edit'],
 		['POST', '/events/delete/[i:id]', 'Dashboard#eventsDelete', 'dashboard_events_delete'],
-		['GET', '/events/list', 'Dashboard#eventsList', 'dashboard_events_list'],
+		['GET', '/events/list', 'DashboardEvents#eventsList', 'dashboard_events_list'],
 		/* DASHBOARD PRODUCTS ROUTES */
 		['POST', '/products/add', 'Dashboard#productsAdd', 'dashboard_products_add'],
 		['POST', '/products/edit/[i:id]', 'Dashboard#productsEdit', 'dashboard_products_edit'],
@@ -33,4 +34,8 @@
 		['GET', '/logout', 'Auth#logout', 'auth_logout'],
 		['GET|POST', '/signup', 'Auth#signup', 'auth_signup'],
 		['GET|POST', '/lostpassword', 'Auth#lostPassword', 'auth_lostpassword'],
+		
+		['GET', '/dashboard/dashboard-events', 'DashboardEvents#listEvents', 'events'],
+		['GET|POST', '/dashboard/dashboard-events/[:id]', 'DashboardEvents#editEvents', 'edit_events']
 	);
+	
