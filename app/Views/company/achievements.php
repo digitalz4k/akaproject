@@ -5,7 +5,7 @@
 
 <h1><?= $title ?></h1>
 
-  <div id="achievements" class="container-fluid">
+  <div id="achievements" class="container">
   	<div class="row">
           <div class="col-xs-12 ach-tab-container">
             <div class="row">
