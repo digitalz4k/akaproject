@@ -7,34 +7,44 @@
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 		  <!-- Indicators -->
 			  <ol class="carousel-indicators">
-			    <li data-target="#myCarousel" data-slide-to="0" class="active"><img src="<?= $this->assetUrl('img/actMirror.png') ?>" alt="actMirror"></li>
-			    <li data-target="#myCarousel" data-slide-to="1"><img src="<?= $this->assetUrl('img/bimMirrors.png') ?>" alt="bimMirrors" /></li>
-			    <li data-target="#myCarousel" data-slide-to="2"><img src="<?= $this->assetUrl('img/closedloopsystems.png') ?>" alt="closedloopsystem"></li>
-			    <li data-target="#myCarousel" data-slide-to="3"><img src="<?= $this->assetUrl('img/M2.png') ?>" alt="M2"></li>
-			    <li data-target="#myCarousel" data-slide-to="4"><img src="<?= $this->assetUrl('img/WFSensor.png') ?>" alt="WFSensor"></li>
+			    <li data-target="#myCarousel" data-slide-to="0" class="active"><img src="<?= $this->assetUrl('img/Bimorph_deformable_mirrors.png') ?>" alt="bimorph_deformable_mirrors"></li>
+			    <li data-target="#myCarousel" data-slide-to="1"><img src="<?= $this->assetUrl('img/Stack_actuator_deformable_mirrors.png') ?>" alt="stack_actuator_deformable_mirrors" /></li>
+			    <li data-target="#myCarousel" data-slide-to="2"><img src="<?= $this->assetUrl('img/Very_large_deformable_mirrors.png') ?>" alt="very_large_deformable_mirrors"></li>
+			    <li data-target="#myCarousel" data-slide-to="3"><img src="<?= $this->assetUrl('img/Wavefront_sensor.png') ?>" alt="wavefront_sensor"></li>
+			    
 			  </ol>
 		
 		  <!-- Wrapper for slides -->
+		
+		
 			  <div class="carousel-inner" role="listbox">
 			    <div class="item active">
-			      <img src="<?= $this->assetUrl('img/actMirror.png') ?>" alt="actMirror">
+			      	<a href="#"><img src="<?= $this->assetUrl('img/Bimorph_deformable_mirrors.png') ?>" alt="bimorph_deformable_mirrors"></a>
+				    <div class="carousel-caption">
+	        			<h2>Bimorph deformable mirrors</h2>
+	        		</div>
+			    </div>
+				<div class="item">
+			    	 <a href="#">	<img src="<?= $this->assetUrl('img/Stack_actuator_deformable_mirrors.png') ?>" alt="stack_actuator_deformable_mirrors"></a>
+				    <div class="carousel-caption">
+	        			<h2>Stack actuator deformable mirrors </h2>
+	        		</div>
 			    </div>
 		
 			    <div class="item">
-			     	<img src="<?= $this->assetUrl('img/bimMirrors.png') ?>" alt="bimMirrors">
+			     	<a href="#"> <img src="<?= $this->assetUrl('img/Very_large_deformable_mirrors.png') ?>" alt="very_large_deformable_mirrors"></a>
+				    <div class="carousel-caption">
+	        			<h2>Very large deformable mirrors</h2>
+	        		</div>
 			    </div>
 		
 			    <div class="item">
-			     	 <img src="<?= $this->assetUrl('img/closedloopsystems.png') ?>" alt="closedloopsystem">
+			     	<a href="#"> <img src="<?= $this->assetUrl('img/Wavefront_sensor.png') ?>" alt="wavefront_sensor"></a>
+				     <div class="carousel-caption">
+	        			<h2>Wavefront sensor</h2>
+	        		</div>
 			    </div>
-		
-			    <div class="item">
-			     	 <img src="<?= $this->assetUrl('img/M2.png') ?>" alt="M2">
-			    </div>
-		
-			     <div class="item">
-			     	 <img src="<?= $this->assetUrl('img/WFSensor.png') ?>" alt="WFSensor">
-			    </div>
+			    
 			  </div>
 		
 		  <!-- Left and right controls -->
