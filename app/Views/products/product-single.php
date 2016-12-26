@@ -8,23 +8,27 @@
         <div class="col-xs-8 col-xs-offset-2">
             <h2 class="text-primary text-center"><?php echo $product["name"]; ?> : <?php echo $product["subtitle"]; ?></h2>
         </div>
+        <div class="col-xs-2"></div>
         <div class="col-xs-8 col-xs-offset-2">
             <p class="text-justify">
                 <?php echo $product["description"]; ?> 
             </p>
         </div>
+        <div class="col-xs-2"></div>
         <div class="col-xs-8 col-xs-offset-2">
             <p class="text-center lead text-primary">
                 <?php echo $product["accroche"]; ?>
             </p>
         </div>
+        <div class="col-xs-2"></div>
         <section class="row">
-            <div class="col-xs-12 blueflag">
-                <div class="col-xs-11 col-xs-offset-1">
-                    <span>+ </span>BASIC SPECIFICATIONS
+            <div class="col-xs-12 blueflag panel panel-primary" data-toggle="collapse" data-target="#basicSpec">
+                <div class="col-xs-1"><i class="fa fa-plus" aria-hidden="true"></i></div>
+                <div class="col-xs-11">
+                    BASIC SPECIFICATIONS
                 </div>
             </div>
-            <div class="row">
+            <div class="row collapse" id="basicSpec">
                 <?php foreach ($basic as $basicSpec)
                 { ?>
                 <div class="col-xs-2 col-xs-offset-2">
@@ -41,12 +45,13 @@
             
         </section>
         <section class="row">
-            <div class="blueflag col-xs-12">
-                <div class="col-xs-11 col-xs-offset-1">
-                    <span>- </span>DETAILS SPECIFICATIONS
+            <div class="blueflag col-xs-12 panel panel-primary" data-toggle="collapse" data-target="#detailSpec">
+                <div class="col-xs-1"><i class="fa fa-plus" aria-hidden="true"></i></div>
+                <div class="col-xs-11">
+                    DETAILS SPECIFICATIONS
                 </div>
             </div>
-            <div class="row">
+            <div class="row collapse" id="detailSpec">
                 <div class="col-xs-8 col-xs-offset-2">
                     <h3 class="text-center">WE HAVE AN EXPERIENCE WITH A LARGE RANGE OF<br />
                     <SPAN class="text-primary">STACK ACTUATOR DEFORMABLE MIRRORS</SPAN></h3>

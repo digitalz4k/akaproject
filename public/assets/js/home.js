@@ -31,6 +31,7 @@ function display ()
     
     // Affichage du slider, délai 10s
     setInterval(display, 10000);
+    
 
 
 
