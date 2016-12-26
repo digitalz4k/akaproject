@@ -2,7 +2,7 @@
 <?php $this->layout('layout', ['title' => 'Company']) ?>
 
 <?php $this->start('main_content') ?>
-<div id="company">
+<div id="company" class="container">
 
 <section class="row">
     <div class="col-xs-8 col-xs-offset-2">

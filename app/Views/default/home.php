@@ -11,11 +11,8 @@
 			    <li data-target="#myCarousel" data-slide-to="1"><img src="<?= $this->assetUrl('img/Stack_actuator_deformable_mirrors.png') ?>" alt="stack_actuator_deformable_mirrors" /></li>
 			    <li data-target="#myCarousel" data-slide-to="2"><img src="<?= $this->assetUrl('img/Very_large_deformable_mirrors.png') ?>" alt="very_large_deformable_mirrors"></li>
 			    <li data-target="#myCarousel" data-slide-to="3"><img src="<?= $this->assetUrl('img/Wavefront_sensor.png') ?>" alt="wavefront_sensor"></li>
-			    
 			  </ol>
-		
 		  <!-- Wrapper for slides -->
-		
 		
 			  <div class="carousel-inner" role="listbox">
 			    <div class="item active">
@@ -59,7 +56,7 @@
 		</div>
 	</div>
   
-    <div id="events">
+    <div id="events" class="container">
         <h2>Meet Aka Optics</h2>
         <ul class="list-inline list-unstyled">
         	
