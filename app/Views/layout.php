@@ -21,7 +21,7 @@
 		<?= $this->insert('partials/nav') ?>
 	</header>
 
-	<main class="container">
+	<main>
 		<?= $this->section('main_content') ?>
 	</main>
 	

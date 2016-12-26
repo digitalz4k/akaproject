@@ -2,7 +2,7 @@
 <?php $this->layout('layout', ['title' => 'Products']) ?>
 
 <?php $this->start('main_content') ?>
-<div id="products">
+<div id="products" class="container">
     
     <h2 class="text-primary text-center">AKA Optics manufactures Adaptive Optics Closed Loop Systems,<br/> Deformable Mirrors, Wavefront Sensors and M2 Meters</h2>
     
