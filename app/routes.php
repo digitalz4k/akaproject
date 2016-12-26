@@ -1,5 +1,6 @@
 <?php
 	
+	// méthode GET ou POST, chemin, nom de classe, méthode de classe, nom de la route
 	$w_routes = array(
 		['GET', '/', 'Default#home', 'home'],
 		['GET', '/products', 'Products#products', 'products'],
@@ -14,6 +15,7 @@
 		['GET|POST', '/signup', 'Auth#signup', 'auth_signup'],
 		['GET|POST', '/lostpassword', 'Auth#lostPassword', 'auth_lostpassword'],
 		
-		['GET', '/dashboard/dashboard-events', 'DashboardEvents#listEvents', 'events']
+		['GET', '/dashboard/dashboard-events', 'DashboardEvents#listEvents', 'events'],
+		['GET|POST', '/dashboard/dashboard-events/[:id]', 'DashboardEvents#editEvents', 'edit_events']
 	);
 	
