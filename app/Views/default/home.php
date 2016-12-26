@@ -6,18 +6,18 @@
     
     <!-- slider section -->
     <!--<div id="slider">-->
-    <!--<h2>Slider here</h2>-->
+    <!--    <h2>Slider here</h2>-->
         
     <!--</div>-->
     <div class="container-fluid">
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 		  <!-- Indicators -->
 			  <ol class="carousel-indicators">
-			    <li data-target="#myCarousel" data-slide-to="0" class="active"><img src="<?= $this->assetUrl('img/Bimorph_deformable_mirrors.png') ?>" alt="bimorph_deformable_mirrors"></li>
-			    <li data-target="#myCarousel" data-slide-to="1"><img src="<?= $this->assetUrl('img/Stack_actuator_deformable_mirrors.png') ?>" alt="stack_actuator_deformable_mirrors" /></li>
-			    <li data-target="#myCarousel" data-slide-to="2"><img src="<?= $this->assetUrl('img/Very_large_deformable_mirrors.png') ?>" alt="very_large_deformable_mirrors"></li>
-			    <li data-target="#myCarousel" data-slide-to="3"><img src="<?= $this->assetUrl('img/Wavefront_sensor.png') ?>" alt="wavefront_sensor"></li>
-			    
+			    <li data-target="#myCarousel" data-slide-to="0" class="active"><img src="<?= $this->assetUrl('img/actMirror.png') ?>" alt="actMirror"></li>
+			    <li data-target="#myCarousel" data-slide-to="1"><img src="<?= $this->assetUrl('img/bimMirrors.png') ?>" alt="bimMirrors" /></li>
+			    <li data-target="#myCarousel" data-slide-to="2"><img src="<?= $this->assetUrl('img/closedloopsystems.png') ?>" alt="closedloopsystem"></li>
+			    <li data-target="#myCarousel" data-slide-to="3"><img src="<?= $this->assetUrl('img/M2.png') ?>" alt="M2"></li>
+			    <li data-target="#myCarousel" data-slide-to="4"><img src="<?= $this->assetUrl('img/WFSensor.png') ?>" alt="WFSensor"></li>
 			  </ol>
 		
 		  <!-- Wrapper for slides -->
@@ -25,32 +25,24 @@
 		
 			  <div class="carousel-inner" role="listbox">
 			    <div class="item active">
-			      	<a href="#"><img src="<?= $this->assetUrl('img/Bimorph_deformable_mirrors.png') ?>" alt="bimorph_deformable_mirrors"></a>
-				    <div class="carousel-caption">
-	        			<h2>Bimorph deformable mirrors</h2>
-	        		</div>
-			    </div>
-				<div class="item">
-			    	 <a href="#">	<img src="<?= $this->assetUrl('img/Stack_actuator_deformable_mirrors.png') ?>" alt="stack_actuator_deformable_mirrors"></a>
-				    <div class="carousel-caption">
-	        			<h2>Stack actuator deformable mirrors </h2>
-	        		</div>
+			      <img src="<?= $this->assetUrl('img/actMirror.png') ?>" alt="actMirror">
 			    </div>
 		
 			    <div class="item">
-			     	<a href="#"> <img src="<?= $this->assetUrl('img/Very_large_deformable_mirrors.png') ?>" alt="very_large_deformable_mirrors"></a>
-				    <div class="carousel-caption">
-	        			<h2>Very large deformable mirrors</h2>
-	        		</div>
+			     	<img src="<?= $this->assetUrl('img/bimMirrors.png') ?>" alt="bimMirrors">
 			    </div>
 		
 			    <div class="item">
-			     	<a href="#"> <img src="<?= $this->assetUrl('img/Wavefront_sensor.png') ?>" alt="wavefront_sensor"></a>
-				     <div class="carousel-caption">
-	        			<h2>Wavefront sensor</h2>
-	        		</div>
+			     	 <img src="<?= $this->assetUrl('img/closedloopsystems.png') ?>" alt="closedloopsystem">
 			    </div>
-			    
+		
+			    <div class="item">
+			     	 <img src="<?= $this->assetUrl('img/M2.png') ?>" alt="M2">
+			    </div>
+		
+			     <div class="item">
+			     	 <img src="<?= $this->assetUrl('img/WFSensor.png') ?>" alt="WFSensor">
+			    </div>
 			  </div>
 		
 		  <!-- Left and right controls -->
@@ -68,17 +60,18 @@
     <div id="events">
         <h2>Meet Aka Optics</h2>
         <ul class="list-inline list-unstyled">
-        <?php
-        //* A METTRE DANS LE CONTROLLEUR POUR BIEN SEPARER LE BACK DU FRONT (voir DefaultController.php pour les instructions)
+        <?php  
+        	$events = new \Model\EventsModel;
         	
-        	$events = new \Model\EventsModel; //*
-        	$tabEvents = $events->findAll(); //*
+        	$tabEvents = $events->findAll();
         	
-        	// S'il n'y a pas d'events, afficher un message "No events." par exemple
         	foreach ($tabEvents as $event)
         	{ ?>
-        		<li><a href="<?php echo $event['link'] ?>"><?php echo $event['title'] ?></a> <?php echo $event['place'] ?> <?php echo $event['description'] ?> <?php echo $event['date'] ?></li>
-        	<?php } ?>
+        		
+        			<li><a href="<?php echo $event['link'] ?>" target="blank>"><?php echo $event['title'] ?></a> <?php echo $event['place'] ?> <?php echo $event['description'] ?> <?php echo $event['date'] ?></li>
+        		
+        	<?php }
+        ?>
         </ul>
         
     </div>

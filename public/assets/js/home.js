@@ -3,10 +3,10 @@ $('.carousel.carousel-slider').carousel();
 function display ()
 {
     // récupérer l'event actif
-    var eventActive = $('#events ul li.eventActive');
+    var eventActive = $('#events ul li.activeEvent');
 
     // enlever la classe .active
-    eventActive.removeClass("eventActive");
+    eventActive.removeClass("activeEvent");
     
     // afficher l'event suivant
     eventSuivant = eventActive.next();
@@ -14,12 +14,12 @@ function display ()
     // si plus d'events on boucle
     if(eventSuivant.length > 0)
     {
-        eventSuivant.addClass("eventActive");
+        eventSuivant.addClass("activeEvent");
     }
     else
     {
-        eventActive.removeClass('active');
-        $("#events ul li:first").addClass("eventActive");
+        eventActive.removeClass('activeEvent');
+        $("#events ul li:first").addClass("activeEvent");
     }
 }
 
@@ -27,7 +27,7 @@ function display ()
 
 
     // ajout de la classe .active au premier event
-    $(eventFirst).addClass("eventActive");
+    $(eventFirst).addClass("activeEvent");
     
     // Affichage du slider, délai 10s
     setInterval(display, 10000);
