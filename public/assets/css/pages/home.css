@@ -57,7 +57,7 @@
 	display: none;
 }
 
-.active {
+.activeEvent {
 	display: block !important;
 	text-align: center;
 	font-size: 2em;

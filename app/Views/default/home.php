@@ -68,7 +68,7 @@
         	foreach ($tabEvents as $event)
         	{ ?>
         		
-        			<li><a href="<?php echo $event['link'] ?>"><?php echo $event['title'] ?></a> <?php echo $event['place'] ?> <?php echo $event['description'] ?> <?php echo $event['date'] ?></li>
+        			<li><a href="<?php echo $event['link'] ?>" target="blank>"><?php echo $event['title'] ?></a> <?php echo $event['place'] ?> <?php echo $event['description'] ?> <?php echo $event['date'] ?></li>
         		
         	<?php }
         ?>
