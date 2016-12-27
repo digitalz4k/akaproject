@@ -1,3 +1,4 @@
+<?php $this->start('main_content') ?>
 <div class="col-xs-8">
     <div class="form-group new-produit">
         <label for="nom-produit">Nom du produit:</label>
@@ -33,3 +34,8 @@
         <button type="button" class="btn btn-primary btn-create-spec">Ajouter</button>
     </div> 
 </div>
+<?php $this->stop('main_content') ?>
+
+<?php $this->start('css') ?>
+	<link rel="stylesheet" href="<?= $this->assetUrl('css/pages/dashboard.css') ?>">
+<?php $this->stop('css') ?>

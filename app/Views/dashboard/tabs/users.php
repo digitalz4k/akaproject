@@ -1,7 +1,7 @@
 <?php $this->layout('layout', ['title' => 'Manage Users']) ?>
 
 <?php $this->start('main_content') ?>
-<div class="main-dashboard">
+<div class="main-dashboard container">
     <div class="row">
         <div class="col-xs-2">
             <?= $this->insert('dashboard/navTabs'); ?>
@@ -34,4 +34,8 @@
     </div>
 </div>
 <?php $this->stop('main_content') ?>
+
+<?php $this->start('css') ?>
+	<link rel="stylesheet" href="<?= $this->assetUrl('css/pages/dashboard.css') ?>">
+<?php $this->stop('css') ?>
 

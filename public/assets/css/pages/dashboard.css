@@ -6,9 +6,15 @@
 *	Created at: 10/12/2016
 *
 */
-h2{
+
+h2 {
     color:#3498db;
 }
-label{
-    color:#3498db ;
+
+label {
+    color:#3498db;
+}
+
+.main-dashboard {
+    padding: 2em 0;
 }
