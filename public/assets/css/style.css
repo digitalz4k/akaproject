@@ -48,3 +48,28 @@ footer {
     text-align: center;
 }
 
+/***** NAV ****/ 
+
+.navbar.navbar-default {
+	background: none !important;
+	border-color: transparent;
+}
+
+li{
+	font-weight: bold;
+	letter-spacing: normal;
+	margin-right: 5px;
+	
+}
+.menu:hover{
+    background-color:rgba(52, 152, 219,0.2);
+    
+}
+a:hover{
+    color:rgba(41, 128, 185,1.0) !important;
+}
+
+.logo{
+    width:111px;
+    height:90px;
+}

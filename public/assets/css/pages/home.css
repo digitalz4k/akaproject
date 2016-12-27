@@ -62,12 +62,12 @@
     border-radius: 0px;
 }
 .item h2{
-/*	background-color: rgba(52, 152, 219,0.8);*/
-	color: white;
 	
+	color: #3498db;
 	letter-spacing: 3px;
-	text-shadow: none;
 	font-family: sans-serif;
+	text-shadow: none;
+	
 }
 .item .carousel-caption{
 	width:100% !important;
@@ -78,26 +78,30 @@
 .carousel-caption{
 	right:0%;
 	left:0%;
-	bottom:100px;
+	bottom:70px;
 }
+.img-responsive{
+	bottom:0 auto;
+}
+
 
 /***********************************************/
-.navbar.navbar-default {
-	background: none !important;
-	border-color: transparent;
-}
+/*.navbar.navbar-default {*/
+/*	background: none !important;*/
+/*	border-color: transparent;*/
+/*}*/
 
-li{
-	font-weight: bold;
-	letter-spacing: normal;
-	margin-right: 5px;
+/*li{*/
+/*	font-weight: bold;*/
+/*	letter-spacing: normal;*/
+/*	margin-right: 5px;*/
 	
-}
+/*}*/
 
-.logo {
-	width: 111px;
-	height: 90px;
-}
+/*.logo {*/
+/*	width: 111px;*/
+/*	height: 90px;*/
+/*}*/
 
 .event1 {
 	color: #3498db;
@@ -132,4 +136,16 @@ li{
 	/*position: absolute; bottom: 0; left: 0; right: 0*/
 	
 }
+
+.anim {animation-duration: 6s; animation-name: slidein; animation-iteration-count: infinite; 
+animation-direction: alternate-reverse; }
+
+@keyframes slidein {
+  from {margin-left: 100%; width: 300%;}
+
+  to {margin-left: 0%; width: 100%;}}
+
+.ul {overflow: hidden;} .meet {color:#3498db;} .evcolor {color:#3498db;} 
+
+
 

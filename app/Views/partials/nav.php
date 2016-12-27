@@ -8,6 +8,7 @@
 
 $this->engine->loadExtension(new League\Plates\Extension\URI($_SERVER['PATH_INFO']));
 
+
 if($header_image == true)
 {
 ?>
@@ -32,8 +33,8 @@ if($header_image == true)
           <span class="icon-bar"></span>
         </button>
         <!--logo ici-->
-        <a class="navbar-brand" href="/akaproject/public/"></a>
-        <img src="<?= $this->assetUrl('img/LogoAkaOptics.png') ?>"class="logo" alt="">
+        <a class="navbar-brand" href="/akaproject/public/"><img src="<?= $this->assetUrl('img/LogoAkaOptics.png') ?>"class="logo" alt=""></a>
+        
         
         
       </div>
@@ -41,10 +42,10 @@ if($header_image == true)
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-          <li <?= $this->uri('/products', 'class="selected"')?>><a href="/akaproject/public/products">Products</a></li>
-  		    <li <?= $this->uri('/company', 'class="selected"')?>><a href="/akaproject/public/company">Company</a></li>
-  		    <li <?= $this->uri('/achievements', 'class="selected"')?>><a href="/akaproject/public/achievements">Achievements</a></li>
-  		    <li <?= $this->uri('/contact', 'class="selected"')?>><a href="/akaproject/public/contact">Contact</a></li>
+          <li class="menu" <?= $this->uri('/products', 'class="selected"')?>><a href="/akaproject/public/products">Products</a></li>
+  		    <li class="menu" <?= $this->uri('/company', 'class="selected"')?>><a href="/akaproject/public/company">Company</a></li>
+  		    <li class="menu" <?= $this->uri('/achievements', 'class="selected"')?>><a href="/akaproject/public/achievements">Achievements</a></li>
+  		    <li class="menu" <?= $this->uri('/contact', 'class="selected"')?>><a href="/akaproject/public/contact">Contact</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
