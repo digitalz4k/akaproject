@@ -1,10 +1,11 @@
 <?php $this->layout('layout', ['title' => 'Manage Events']) ?>
 <?php $this->start('main_content') ?>
 
-        <div class="col-xs-3 panel panel-heading panel-primary text-center text-primary">Name</div>
-        <div class="col-xs-3 panel panel-heading panel-primary text-center text-primary">Link</div>
-        <div class="col-xs-3 panel panel-heading panel-primary text-center text-primary">Place</div>
-        <div class="col-xs-3 panel panel-heading panel-primary text-center text-primary">Date</div>
+
+    <div class="col-xs-3 panel panel-heading panel-primary text-center text-primary">Name</div>
+    <div class="col-xs-3 panel panel-heading panel-primary text-center text-primary">Link</div>
+    <div class="col-xs-3 panel panel-heading panel-primary text-center text-primary">Place</div>
+    <div class="col-xs-3 panel panel-heading panel-primary text-center text-primary">Date</div>
 
 
 <?php

@@ -1,7 +1,7 @@
 <?php $this->layout('layout', ['title' => 'Contact']) ?>
 
 <?php $this->start('main_content') ?>
-<div class="main-dashboard">
+<div class="main-dashboard container">
     <div class="row">
         <?= $this->insert('dashboard/navTabs'); ?>
     
