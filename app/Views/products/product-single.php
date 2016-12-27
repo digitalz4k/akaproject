@@ -22,7 +22,7 @@
         </div>
         <div class="col-xs-2"></div>
         <section class="row">
-            <div class="col-xs-12 blueflag panel panel-primary" data-toggle="collapse" data-target="#basicSpec">
+            <div id="basic" class="col-xs-12 blueflag panel panel-primary" data-toggle="collapse" data-target="#basicSpec">
                 <div class="col-xs-1"><i class="fa fa-plus" aria-hidden="true"></i></div>
                 <div class="col-xs-11">
                     BASIC SPECIFICATIONS
@@ -45,7 +45,7 @@
             
         </section>
         <section class="row">
-            <div class="blueflag col-xs-12 panel panel-primary" data-toggle="collapse" data-target="#detailSpec">
+            <div id="details" class="blueflag col-xs-12 panel panel-primary" data-toggle="collapse" data-target="#detailSpec">
                 <div class="col-xs-1"><i class="fa fa-plus" aria-hidden="true"></i></div>
                 <div class="col-xs-11">
                     DETAILS SPECIFICATIONS
@@ -82,3 +82,6 @@
 <?php $this->start('css') ?>
 	<link rel="stylesheet" href="<?= $this->assetUrl('css/pages/product-single.css') ?>">
 <?php $this->stop('css') ?>
+<?php $this->start('js') ?>
+	<script src="<?= $this->assetUrl('js/product-single.js') ?>"></script>
+<?php $this->stop('js') ?>
