@@ -65,6 +65,9 @@ li{
     background-color:rgba(52, 152, 219,0.2);
     
 }
+a{
+    color:#3498db;
+}
 a:hover{
     color:rgba(41, 128, 185,1.0) !important;
 }
