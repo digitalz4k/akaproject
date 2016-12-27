@@ -60,4 +60,9 @@ div.ach-tab div.ach-tab-content:not(.active){
 
 .center {
   text-align: center;
+  margin: 0 auto;
+}
+
+.ach-tab-content div img {
+  width: 90%;
 }

@@ -1,4 +1,8 @@
 $(document).ready(function() {
+    
+    $("div.ach-tab-menu>div.list-group>a:first").addClass('active');
+    console.log($("div.ach-tab-menu>div.list-group>a:first"));
+    
     // au click sur un tab
     $("div.ach-tab-menu>div.list-group>a").click(function(e) {
         e.preventDefault();

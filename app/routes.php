@@ -6,7 +6,6 @@
 		['GET', '/', 'Default#home', 'home'],
 		['GET', '/products', 'Products#products', 'products'],
 		['GET', '/products/[:id]', 'Products#productsSingle', 'products_single'],
-		['GET', '/achievements', 'Default#achievements', 'achievements'],
 		['GET', '/company', 'Default#company', 'company'],
 		['GET', '/contact', 'Default#contact', 'contact'],
 		/* DASHBOARD ROUTE */
@@ -36,6 +35,7 @@
 		['GET|POST', '/lostpassword', 'Auth#lostPassword', 'auth_lostpassword'],
 		
 		['GET', '/dashboard/dashboard-events', 'DashboardEvents#listEvents', 'events'],
-		['GET|POST', '/dashboard/dashboard-events/[:id]', 'DashboardEvents#editEvents', 'edit_events']
+		['GET|POST', '/dashboard/dashboard-events/[:id]', 'DashboardEvents#editEvents', 'edit_events'],
+		['GET', '/achievements', 'Achievements#listAchievements', 'list_achievements']
 	);
 	
