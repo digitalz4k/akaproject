@@ -8,18 +8,18 @@ function change()
     
     if (collapse === 'row collapse')
     {
-        console.log('open');
+        //affichage icône + quand la section est repliée
         indicator.removeClass('fa fa-plus');
         indicator.addClass('fa fa-minus');
     }
     else if (collapse === 'row collapse in')
     {
-        console.log('close');
+        //affichage icône - quand la section est dépliée
         indicator.removeClass('fa fa-minus');
         indicator.addClass('fa fa-plus');
     }
 }
 
 
-$(basic).on('click', change);
+$('#basic').on('click', change);
 
