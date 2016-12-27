@@ -36,7 +36,7 @@
                           <h3><?= $achievement['title'] ?></h3>
                           <h5><?= $achievement['subtitle'] ?></h5>
                           <img src="<?= $achievement['image'] ?>" class="image responsive"/>
-                          <h6><?= $achievement['link'] ?></h6>
+                          <h6><i class="fa fa-quote-left fa-3x" aria-hidden="true"></i> <?= $achievement['feedback'] ?></h6>
                         </div>
                     </div>
                     
