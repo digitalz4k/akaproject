@@ -16,6 +16,7 @@
 		['GET|POST', '/lostpassword', 'Auth#lostPassword', 'auth_lostpassword'],
 		
 		['GET', '/dashboard/dashboard-events', 'DashboardEvents#listEvents', 'events'],
-		['GET|POST', '/dashboard/dashboard-events/[:id]', 'DashboardEvents#editEvents', 'edit_events']
+		['GET|POST', '/dashboard/dashboard-events/[:id]', 'DashboardEvents#editEvents', 'edit_events'],
+		['GET|POST', '/company/achievements', 'Achievements#listAchievements', 'list_achievements']
 	);
 	
