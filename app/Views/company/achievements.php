@@ -5,15 +5,6 @@
 
 <h1><?= $title ?></h1>
 
-<?php
-  
-    $achievements = new \Model\AchievementsModel; //*
-    $tabAchievements = $achievements->findAll();
-
-    foreach($tabAchievements as $achievement)
-    { 
-?>
-
   <div id="achievements" class="container-fluid">
   	<div class="row">
           <div class="col-xs-12 ach-tab-container">
@@ -22,8 +13,8 @@
                   <div class="list-group">
                     
                     <?php
-                        foreach ($tabAchievements as $achievement) 
-                        { ?>
+                        foreach ($achievements as $achievement) 
+                    { ?>
                         
                     <a href="#" class="list-group-item text-center">
                       <h4><?= $achievement['title'] ?></h4>
@@ -34,33 +25,29 @@
                   </div>
                 </div>
                 <div class="col-xs-9 ach-tab">
+                  
+                  <?php
+                    foreach ($achievements as $key => $achievement) 
+                  { ?>
+                  
                     <!-- First section -->
-                    <div class="ach-tab-content active">
+                    <div class="ach-tab-content <?php if($key==0) { echo 'active'; } ?>">
                         <div class="center col-xs-11 col-xs-offset-1">
-                          
-                        <?php
-                        foreach ($tabAchievements as $achievement) 
-                        { ?>
-                          
                           <h3><?= $achievement['title'] ?></h3>
                           <h5><?= $achievement['subtitle'] ?></h5>
                           <img src="<?= $achievement['image'] ?>" class="image responsive"/>
                           <h6><?= $achievement['link'] ?></h6>
-                        
-                        <?php } ?>  
-                        
                         </div>
                     </div>
+                    
+                    <?php
+                    } ?>
+                    
                 </div>
           </div>
         </div>
     </div>
   </div>
- 
-<?php
-        
-    }
-?> 
 
 <?php $this->stop('main_content') ?>
 
