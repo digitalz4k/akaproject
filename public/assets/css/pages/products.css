@@ -39,6 +39,7 @@
     transform: rotate(10deg);
     user-select: none;
     cursor: pointer;
+    overflow: hidden;
 }
 /*HELPER SECTION STYLE*/
 .swipe-helper { width: 220px; cursor: default; }
@@ -118,22 +119,15 @@
   background-size: cover;
   z-index:-1;
 }
-/* Adding a backgorund picture to each section */
-.swipe-item:nth-child(2):before {
-    background-image: url('http://placekitten.com/1500/1000');
+.swipe-img {
+  position: absolute;
+  background: #ccc;
+  top: -2em;
+  left: -1em;
+  height: 100%;
+  width: auto;
 }
-.swipe-item:nth-child(3):before {
-  background-image: url('http://placekitten.com/1500/1000');
-}
-.swipe-item:nth-child(4):before {
-  background-image: url('http://placekitten.com/1500/1000');
-}
-.swipe-item:nth-child(5):before {
-  background-image: url('http://placekitten.com/1500/1000');
-}
-.swipe-item:nth-child(6):before {
-  background-image: url('http://placekitten.com/1500/1000');
-}
+
 /*ACTIVE STYLES*/
 .swipe-item.active {
   animation: filter-animation .75s backwards;
