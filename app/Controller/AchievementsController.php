@@ -16,6 +16,19 @@ class AchievementsController extends \W\Controller\Controller
         $this->show ('company/achievements', ["achievements" => $res]);
 
     }
+    
+    public function singleAchievement($id)
+    {
+        if(!empty($_POST))
+        {
+            $res = $this->db -> find($id);
+            $this->show('company/achievements', ["achievements" => $res]);
+        }
+        else
+        {
+            $this->show('company/achievements');
+        }
+    }
 }
 
 

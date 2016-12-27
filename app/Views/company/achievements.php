@@ -25,7 +25,7 @@
                         foreach ($tabAchievements as $achievement) 
                         { ?>
                         
-                    <a href="#" class="list-group-item active text-center">
+                    <a href="#" class="list-group-item text-center">
                       <h4><?= $achievement['title'] ?></h4>
                     </a>
                     
