@@ -1,3 +1,4 @@
+<?php $this->engine->addData(["header_image" => true, "header_image_name" => $product["picture_url"]]); ?>
 <?php $this->layout('layout', ['title' => 'Product name']) ?>
 
 <?php $this->start('main_content') ?>
