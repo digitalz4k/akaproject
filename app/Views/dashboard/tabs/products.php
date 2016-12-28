@@ -19,8 +19,10 @@
                         <span class="badge"><a href="/akaproject/public/aka-admin/products/edit/<?= $product["id"] ?>">Edit</a></span>
                         <span class="badge"><a href="/akaproject/public/aka-admin/products/delete/<?= $product["id"] ?>">Delete</a></span>
                         <h4 class="list-group-item-heading">
-                            <?php if(!isset($product["picture_url"])) { echo "No picture"; } else { ?>
+                            <?php if($product["picture_url"]) { ?>
                             <img src="/akaproject/public/<?= $product["picture_url"] ?>" width="150" />
+                            <?php } else { ?>
+                            <img src="/akaproject/public/uploads/default_product.png" width="150" />
                             <?php } ?>
                             <?= $product["name"] ?> <?= $product["subtitle"] ?>
                         </h4>

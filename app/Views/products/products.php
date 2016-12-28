@@ -16,8 +16,10 @@
             <?php foreach ($products as $key => $product)
             { ?>
             <li class="swipe-item col col-xs-4 <?php if($key == 1) { echo "active"; } ?>">
-                <?php if (isset($product["picture_url"])) { ?>
+                <?php if ($product["picture_url"]) { ?>
                 <img class="swipe-img" src="/akaproject/public/<?= $product["picture_url"] ?>" />
+                <?php } else { ?>
+                <img class="swipe-img" src="/akaproject/public/uploads/default_product.png" alt="AKA Optics Product"/>
                 <?php } ?>
                 <div class="swipe-content">
                     <h3><?php echo $product['name']; ?></h3>

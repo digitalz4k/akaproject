@@ -30,10 +30,7 @@ if($header_image == true)
           <span class="icon-bar"></span>
         </button>
         <!--logo ici-->
-        <a class="navbar-brand" href="/akaproject/public/"><img src="/akaproject/public/uploads/LogoAkaOptics.png" class="logo" alt="Aka Optics"></a>
-        
-        
-        
+        <a class="navbar-brand" href="/akaproject/public/"><img src="/akaproject/public/uploads/default_logo.png" class="logo" alt="Aka Optics"></a>
       </div>
   
       <!-- Collect the nav links, forms, and other content for toggling -->

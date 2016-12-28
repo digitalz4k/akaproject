@@ -1,4 +1,13 @@
-<?php $this->engine->addData(["header_image" => true, "header_image_name" => $product["picture_url"]]); ?>
+<?php 
+if ($product["picture_url"])
+{
+    $header_image_url = $product["picture_url"];
+} else {
+    $header_image_url = "default_product.png";
+}
+$this->engine->addData(["header_image" => true, "header_image_name" => $header_image_url]); 
+
+?>
 <?php $this->layout('layout', ['title' => $product["name"]]) ?>
 
 <?php $this->start('main_content') ?>

@@ -112,8 +112,6 @@
   top: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.1;
-  filter: grayscale(100%);
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
@@ -126,12 +124,13 @@
   left: -1em;
   height: 100%;
   width: auto;
+  filter: grayscale(100%);
+  opacity: 0.1;
 }
 
 /*ACTIVE STYLES*/
 .swipe-item.active {
   animation: filter-animation .75s backwards;
-  filter: grayscale(0%);
 }
 .swipe-item.active > .swipe-content h3 {
   color: rgba(52, 152, 219,1.0);
@@ -141,6 +140,10 @@
   color: white;
 }
 .swipe-item.active:before {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+.swipe-item.active .swipe-img {
   filter: grayscale(0%);
   opacity: 1;
 }
