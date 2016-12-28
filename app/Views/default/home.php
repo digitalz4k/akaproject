@@ -65,8 +65,11 @@
 			{
 	        	// S'il n'y a pas d'events, afficher un message "No events." par exemple
 	        	foreach ($events as $event)
-	        	{ ?>
-	        		<li><a href="<?php echo $event['link'] ?>"><?php echo $event['title'] ?></a> <?php echo $event['place'] ?> <?php echo $event['description'] ?> <?php echo $event['date'] ?></li>
+	        	{ 
+	        		$date = strtotime($event['date']);
+        			$event['formatDate'] = date('Y-M-d', $date);
+	        	?>
+	        		<li><a href="<?php echo $event['link'] ?>"><?php echo $event['title'] ?></a> <?php echo $event['place'] ?> <?php echo $event['description'] ?> <?php echo $event['formatDate'] ?></li>
         <?php
         		}
 			}

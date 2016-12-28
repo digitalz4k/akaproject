@@ -1,7 +1,10 @@
 <?php
+
 namespace Controller;
 
-class DashboardEventsController extends \W\Controller\Controller
+use \W\Controller\Controller;
+
+class DashboardEventsController extends Controller
 {
     protected $db;
     
@@ -20,7 +23,7 @@ class DashboardEventsController extends \W\Controller\Controller
     {
         if(!empty($_POST))
         {
-            $event = $this->db -> find($id);
+            $event = $this->db->find($id);
             $this->show('dashboard/tabs/events-edit', ["event" => $event]);
         }
         else
