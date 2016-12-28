@@ -31,7 +31,7 @@ $this->engine->addData(["header_image" => true, "header_image_name" => $header_i
         </div>
         <div class="col-xs-2"></div>
         <section class="row">
-            <div class="col-xs-12 blueflag panel panel-primary" data-toggle="collapse" data-target="#basicSpec">
+            <div id="basic" class="col-xs-12 blueflag panel panel-primary accordeon" data-toggle="collapse" data-target="#basicSpec">
                 <div class="container">
                     <div class="col-xs-12">
                         <h3><i class="fa fa-plus" aria-hidden="true"></i> BASIC SPECIFICATIONS</h3>
@@ -54,7 +54,7 @@ $this->engine->addData(["header_image" => true, "header_image_name" => $header_i
             </div>
         </section>
         <section class="row">
-            <div class="blueflag col-xs-12 panel panel-primary" data-toggle="collapse" data-target="#detailSpec">
+            <div id="detail" class="blueflag col-xs-12 panel panel-primary accordeon" data-toggle="collapse" data-target="#detailSpec">
                 <div class="container">
                     <div class="col-xs-12">
                         <h3><i class="fa fa-plus" aria-hidden="true"></i> DETAIL SPECIFICATIONS</h3>
@@ -82,12 +82,23 @@ $this->engine->addData(["header_image" => true, "header_image_name" => $header_i
             </div>
         </section>
     </div>
+    
+    <div class="custom container text-center">
+        <button id="request" class="btn btn-primary btn-lg">Get informations</button>
+        <div id="productRequest">
+            <?php $this->insert('products/productRequestForm') ?>;
+        </div>
+    </div>
+    
 </div>
-
-<?php $this->insert('products/productRequestForm') ?>;
 
 <?php $this->stop('main_content') ?>
 
 <?php $this->start('css') ?>
 	<link rel="stylesheet" href="<?= $this->assetUrl('css/pages/product-single.css') ?>">
 <?php $this->stop('css') ?>
+
+
+<?php $this->start('js') ?>
+	<script src="<?= $this->assetUrl('js/product-single.js') ?>"></script>
+<?php $this->stop('js') ?>

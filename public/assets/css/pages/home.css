@@ -103,6 +103,10 @@
 /*	height: 90px;*/
 /*}*/
 
+#events {
+	margin-top: 2em;
+}
+
 .event1 {
 	color: #3498db;
 	font-size: 32px;

@@ -1,4 +1,5 @@
 <div class="row">
+    <a href="#" id="closeBtn"><i class="fa fa-close"></i></a>
     <form class="col-xs-10 col-xs-offset-1">
         <fieldset col-xs-12>
             <legend>Contact informations</legend>

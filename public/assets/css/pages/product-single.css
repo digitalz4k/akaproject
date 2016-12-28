@@ -8,3 +8,13 @@
     font-size: 2em;
     cursor: pointer;
 }
+
+#productRequest {
+    display: none;
+    z-index: 9999;
+    position: absolute;
+    top: 30%;
+    background: white;
+    border: 1px solid rgba(0,0,0,.2);
+    padding: 2em 1em;
+}
