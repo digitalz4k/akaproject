@@ -18,15 +18,18 @@
         
         public function productsSingle ($id)
         {
-
-            $spec = new \Model\SpecificationsModel;
+            if($this->db->find($id) > 0)
+            {
+                $spec = new \Model\SpecificationsModel;
             
-            $basic = $spec -> basicSpec($id);
-            $details = $spec -> detailsSpec($id);
-            $product = $this->db -> find($id);
-            
-            $this->show ('products/product-single', array('basic' => $basic, 'details' => $details, 'product' => $product));
-
+                $basic = $spec -> basicSpec($id);
+                $details = $spec -> detailsSpec($id);
+                $product = $this->db -> find($id);
+                
+                $this->show ('products/product-single', array('basic' => $basic, 'details' => $details, 'product' => $product));
+            } else {
+                $this->showNotFound();
+            }
         }
         
         public function productsList ()
