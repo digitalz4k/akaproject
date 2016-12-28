@@ -4,7 +4,7 @@
 <?php $this->start('main_content') ?>
 <div id="products" class="container">
     
-    <h2 class="text-primary text-center">AKA Optics manufactures Adaptive Optics Closed Loop Systems,<br/> Deformable Mirrors, Wavefront Sensors and M2 Meters</h2>
+    <h2 class="text-primary text-center justify">AKA Optics manufactures, Bimorph deformable mirrors, Stack actuator deformable mirrors, Very large deformable mirrors and Wavefront Sensors </h2>
     
     <div class="swiper">
         <ul class="swipe-section">
