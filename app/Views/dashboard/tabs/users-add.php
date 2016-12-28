@@ -7,7 +7,7 @@
             <?= $this->insert('dashboard/navTabs'); ?>
         </div>
     
-        <div id="dashboard-users-add col-xs-8">
+        <div id="dashboard-users-add" class="col-xs-8">
             <div class="container">
                <h2 class="text-center text-primary">Add User</h2>
                 <p class="text-center"><strong><?= $msg ?></strong></p>

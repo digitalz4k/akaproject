@@ -28,13 +28,43 @@ class EventsController extends Controller
         }
         else
         {
-            $this->show('dashboard/tabs/events-edit');
+            $event = $this->db->find($id);
+            $this->show('dashboard/tabs/events-edit', ["event" => $event]);
         }
     }
     
-    public function eventDelete($id)
+    public function eventDelete ($id)
     {
-        
+        if($this->db->find($id)) // Si l'event existe
+        {
+            $this->db->delete($id); // On delete l'event
+            $this->redirectToRoute('dashboard_events_list');
+        } else {
+            $this->show('dashboard/tabs/events-delete', ["msg" => "Event not found."]);
+        }
+    }
+    
+    public function eventAdd ()
+    {
+        if(!empty($_POST))
+        {
+            $event = $_POST;
+            $req = $this->db->insert($event);
+            if ($req>0)
+            {
+               $this->redirectToRoute('dashboard_events_list'); 
+            }
+            else
+            {
+                $this->show('dashboard/tabs/events-add', ['msg' => 'No event to add']);
+            }
+            
+        }
+        else
+        {
+            $this->show('dashboard/tabs/events-add');
+        }
+            
     }
 }
 

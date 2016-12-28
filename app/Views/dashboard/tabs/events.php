@@ -8,9 +8,8 @@
             <?= $this->insert('dashboard/navTabs'); ?>
         </div>
         
-        <div id="dashboard-events col-xs-8 col-xs-offset-2">
+        <div id="dashboard-events" class="col-xs-8 col-xs-offset-1">
             <div class="container">
-                <a href="/akaproject/public/aka-admin/events/add" class="btn btn-primary btn-lg pull-right"><i class="fa fa-plus"></i> Add new event</a>
                 <h2>Manage Events</h2>
                 <div class="list-group col-xs-10">
                     <?php foreach($events as $event) { 
@@ -42,6 +41,7 @@
                     </li>
                     <?php } ?>
                 </div>
+                <a href="/akaproject/public/aka-admin/events/add" class="btn btn-primary btn-lg col-xs-3"><i class="fa fa-plus"></i> Add new event</a>
             </div>
         </div>
     </div>

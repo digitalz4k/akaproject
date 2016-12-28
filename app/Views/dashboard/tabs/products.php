@@ -7,10 +7,9 @@
             <?= $this->insert('dashboard/navTabs'); ?>
         </div>
     
-        <div id="dashboard-users col-xs-8 col-xs-offset-2">
+        <div id="dashboard-products" class="col-xs-8 col-xs-offset-1">
             <div class="container">
                 
-                <a href="/akaproject/public/aka-admin/products/add" class="btn btn-primary btn-lg pull-right"><i class="fa fa-plus"></i> Add new product</a>
                 <h2>Manage Products</h2>
                 <div class="list-group col-xs-10">
                     <?php foreach($products as $product) { ?>
@@ -29,7 +28,7 @@
                     </li>
                     <?php } ?>
                 </div>
-                                
+                <a href="/akaproject/public/aka-admin/products/add" class="btn btn-primary btn-lg col-xs-3"><i class="fa fa-plus"></i> Add new product</a>                
             </div>
         </div>
     </div>
