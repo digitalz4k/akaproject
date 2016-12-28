@@ -7,7 +7,7 @@
             <?= $this->insert('dashboard/navTabs'); ?>
         </div>
     
-        <div id="dashboard-products-add" class="col-xs-8 col-xs-offset-2">
+        <div id="dashboard-products-add" class="col-xs-8 col-xs-offset-1">
             <div class="container">
                 <h2>Add Product</h2>
                 <p><strong><?= $msg ?></strong></p>
@@ -15,31 +15,31 @@
                 
                     <div class="form-group ">
                         <label for="name">Title</label>
-                        <input type="text" id="name" name="name">
+                        <input class="form-control" type="text" id="name" name="name">
                     </div>
                     
                     <div class="form-group">
                         <label for="subtitle">Subtitle</label>
-                        <input type="text" id="subtitle" name="subtitle">
+                        <input class="form-control" type="text" id="subtitle" name="subtitle">
                     </div>
                     
                     <div class="form-group">
                         <label for="description">Description</label>
-                        <input type="text" id="description" name="description">
+                        <input class="form-control" type="text" id="description" name="description">
                     </div>
                     
                     <div class="form-group">
                         <label for="tagline">Tagline</label>
-                        <input type="text" id="tagline" name="tagline">
+                        <input class="form-control" type="text" id="tagline" name="tagline">
                     </div>
                     
                     <div class="form-group">
                         <label for="picture">Picture</label>
-                        <input type="file" id="picture" name="picture">
+                        <input class="form-control" type="file" id="picture" name="picture">
                     </div>
                         
                     <div class="form-group">
-                        <button type="submit" class="btn btn-primary btn-create-spec">Create new product</button>
+                        <button type="submit" class="btn btn-primary btn-lg btn-create-spec col-xs-3">Create new product</button>
                     </div> 
                     
                 </form>

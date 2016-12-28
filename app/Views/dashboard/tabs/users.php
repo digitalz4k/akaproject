@@ -27,7 +27,7 @@
                     </li>
                     <?php } ?>
                 </div>
-                 <a href="/akaproject/public/users/add" class="btn btn-primary btn-lg col-xs-3"><i class="fa fa-plus"></i> Add new user</a>      
+                 <a href="/akaproject/public/aka-admin/users/add" class="btn btn-primary btn-lg col-xs-3"><i class="fa fa-plus"></i> Add new user</a>      
             </div>
         </div>
     </div>
