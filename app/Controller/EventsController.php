@@ -28,13 +28,19 @@ class EventsController extends Controller
         }
         else
         {
-            $this->show('dashboard/tabs/events-edit');
+            $event = $this->db->find($id);
+            $this->show('dashboard/tabs/events-edit', ["event" => $event]);
         }
     }
     
     public function eventDelete($id)
     {
         
+    }
+    
+    public function eventAdd ()
+    {
+            $this->show('dashboard/tabs/events-add');
     }
 }
 
