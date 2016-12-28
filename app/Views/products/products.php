@@ -21,7 +21,7 @@
                 <?php } ?>
                 <div class="swipe-content">
                     <h3><?php echo $product['name']; ?></h3>
-                    <p><?php echo $product['accroche']; ?></p>
+                    <p><?php echo $product['tagline']; ?></p>
                     <div class="swipe-footer">
                         <a href="/akaproject/public/products/<?php echo $product['id']; ?>" class="btn btn-primary btn-lg">Discover <i class="fa fa-arrow-right"></i> </a>
                     </div>

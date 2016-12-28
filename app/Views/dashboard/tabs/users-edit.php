@@ -1,4 +1,4 @@
-<?php $this->layout('layout', ['title' => 'Delete User']) ?>
+<?php $this->layout('layout', ['title' => 'Edit User']) ?>
 
 <?php $this->start('main_content') ?>
 <div class="main-dashboard">

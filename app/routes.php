@@ -14,9 +14,9 @@
 		['GET', '/aka-admin/', 'Dashboard#dashboard', 'dashboard'],
 		
 		/* DASHBOARD EVENTS ROUTES */
-		['POST', '/aka-admin/events/add', 'Events#eventAdd', 'dashboard_events_add'],
-		['POST', '/aka-admin/events/edit/[i:id]', 'Events#eventEdit', 'dashboard_events_edit'],
-		['POST', '/aka-admin/events/delete/[i:id]', 'Events#eventDelete', 'dashboard_events_delete'],
+		['GET|POST', '/aka-admin/events/add', 'Events#eventAdd', 'dashboard_events_add'],
+		['GET|POST', '/aka-admin/events/edit/[:id]', 'Events#eventEdit', 'dashboard_events_edit'],
+		['GET', '/aka-admin/events/delete/[:id]', 'Events#eventDelete', 'dashboard_events_delete'],
 		['GET', '/aka-admin/events/list', 'Events#eventsList', 'dashboard_events_list'],
 		
 		/* DASHBOARD PRODUCTS ROUTES */

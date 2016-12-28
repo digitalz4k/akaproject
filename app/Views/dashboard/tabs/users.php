@@ -15,8 +15,8 @@
                     <?php foreach($users as $user) { ?>
                     
                     <li class="list-group-item">
-                        <span class="badge"><a href="/akaproject/public/users/edit/<?= $user["id"] ?>">Edit</a></span>
-                        <span class="badge"><a href="/akaproject/public/users/delete/<?= $user["id"] ?>">Delete</a></span>
+                        <span class="badge"><a href="/akaproject/public/aka-admin/users/edit/<?= $user["id"] ?>">Edit</a></span>
+                        <span class="badge"><a href="/akaproject/public/aka-admin/users/delete/<?= $user["id"] ?>">Delete</a></span>
                         <h4 class="list-group-item-heading">
                             <?= $user["first_name"] ?> <?= $user["last_name"] ?>
                         </h4>

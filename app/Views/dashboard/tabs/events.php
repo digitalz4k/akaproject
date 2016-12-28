@@ -9,26 +9,39 @@
         </div>
         
         <div id="dashboard-events col-xs-8 col-xs-offset-2">
-            <div class="container-fluid">
-                <!-- Liste boostrap + chaque event boutton edit et delete -->
-                <div class="col-xs-3 panel panel-heading panel-primary text-center text-primary">Name</div>
-                <div class="col-xs-3 panel panel-heading panel-primary text-center text-primary">Link</div>
-                <div class="col-xs-3 panel panel-heading panel-primary text-center text-primary">Place</div>
-                <div class="col-xs-3 panel panel-heading panel-primary text-center text-primary">Date</div>
-                <?php
-                    foreach($events as $event)
-                    {   
-                        $date = strtotime($event['date']);
-                        $event['formatDate'] = date('Y-m-d', $date);
-                ?>
-                        <div class="col-xs-3 panel panel-default"><?= $event['title'] ?></div>
-                        <div class="col-xs-3 panel panel-default"><?= $event['link'] ?></div>
-                        <div class="col-xs-3 panel panel-default"><?= $event['place'] ?></div>
-                        <div class="col-xs-3 panel panel-default"><?= $event['formatDate'] ?></div>
-                <?php
-                        
-                    }
-                ?>
+            <div class="container">
+                <a href="/akaproject/public/aka-admin/events/add" class="btn btn-primary btn-lg pull-right"><i class="fa fa-plus"></i> Add new event</a>
+                <h2>Manage Events</h2>
+                <div class="list-group col-xs-10">
+                    <?php foreach($events as $event) { 
+                    $date = strtotime($event['date']);
+        			$event['formatDate'] = date('Y-M-d', $date);
+                    ?>
+                    
+                    <li class="list-group-item">
+                        <span class="badge"><a href="/akaproject/public/aka-admin/events/edit/<?= $event["id"] ?>">Edit</a></span>
+                        <span class="badge"><a href="/akaproject/public/aka-admin/events/delete/<?= $event["id"] ?>">Delete</a></span>
+                        <h4 class="list-group-item-heading text-primary">
+                            <?= $event["title"] ?>
+                        </h4>
+                        <p class="list-group-item-text">
+                            Title: <?= $event["title"] ?>
+                        </p>
+                        <p class="list-group-item-text">
+                            Date: <?= $event["formatDate"] ?>
+                        </p>
+                        <p class="list-group-item-text">
+                            Location: <?= $event["place"] ?>
+                        </p>
+                        <p class="list-group-item-text">
+                            Description: <?= $event["description"] ?>
+                        </p>
+                        <p class="list-group-item-text">
+                            Link: <?= $event["link"] ?>
+                        </p>
+                    </li>
+                    <?php } ?>
+                </div>
             </div>
         </div>
     </div>
