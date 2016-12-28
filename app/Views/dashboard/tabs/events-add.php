@@ -7,7 +7,7 @@
             <?= $this->insert('dashboard/navTabs'); ?>
         </div>
     
-        <div id="dashboard-events-add" class="col-xs-8 col-xs-offset-2">
+        <div id="dashboard-events-add" class="col-xs-8 col-xs-offset-1">
             <div class="container">
                 <h2>Add Event</h2>
                 <p><strong><?= $msg ?></strong></p>
@@ -15,31 +15,31 @@
                 
                     <div class="form-group ">
                         <label for="name">Title</label>
-                        <input type="text" id="title" name="title">
+                        <input class="form-control" type="text" id="title" name="title">
                     </div>
                     
                     <div class="form-group">
                         <label for="subtitle">Date</label>
-                        <input type="date" id="date" name="date">
+                        <input class="form-control" type="date" id="date" name="date">
                     </div>
                     
                     <div class="form-group">
                         <label for="description">Location</label>
-                        <input type="text" id="place" name="place">
+                        <input class="form-control" type="text" id="place" name="place">
                     </div>
                     
                     <div class="form-group">
                         <label for="tagline">Description</label>
-                        <input type="text" id="description" name="description">
+                        <input class="form-control" type="text" id="description" name="description">
                     </div>
                     
                     <div class="form-group">
                         <label for="picture">Link</label>
-                        <input type="text" id="link" name="link">
+                        <input class="form-control" type="text" id="link" name="link">
                     </div>
                         
                     <div class="form-group">
-                        <button type="submit" class="btn btn-primary btn-create-spec">Create new event</button>
+                        <button type="submit" class="btn btn-primary btn-lg btn-create-spec col-xs-3">Create new event</button>
                     </div> 
                     
                 </form>
