@@ -4,7 +4,7 @@ namespace Controller;
 
 use \W\Controller\Controller;
 
-class DashboardEventsController extends Controller
+class EventsController extends Controller
 {
     protected $db;
     

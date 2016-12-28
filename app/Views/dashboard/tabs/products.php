@@ -1,38 +1,34 @@
+<?php $this->layout('layout', ['title' => 'Manage Users']) ?>
+
 <?php $this->start('main_content') ?>
-<div class="col-xs-8">
-    <div class="form-group new-produit">
-        <label for="nom-produit">Nom du produit:</label>
-        <input type="text" class="form-control" id="nom-produits">
+<div class="main-dashboard container">
+    <div class="row">
+        <div class="col-xs-2">
+            <?= $this->insert('dashboard/navTabs'); ?>
+        </div>
+    
+        <div id="dashboard-users col-xs-8 col-xs-offset-2">
+            <div class="container">
+                
+                <a href="/akaproject/public/aka-admin/products/add" class="btn btn-primary btn-lg pull-right"><i class="fa fa-plus"></i> Add new product</a>
+                <h2>Manage Products</h2>
+                <div class="list-group col-xs-10">
+                    <?php foreach($products as $product) { ?>
+                    
+                    <li class="list-group-item">
+                        <span class="badge"><a href="/akaproject/public/aka-admin/products/edit/<?= $product["id"] ?>">Edit</a></span>
+                        <span class="badge"><a href="/akaproject/public/aka-admin/products/delete/<?= $product["id"] ?>">Delete</a></span>
+                        <h4 class="list-group-item-heading">
+                            <img src="<?= $this->assetUrl('img/'.$product["picture_url"]) ?>" width="30" />
+                            <?= $product["name"] ?> <?= $product["subtitle"] ?>
+                        </h4>
+                    </li>
+                    <?php } ?>
+                </div>
+                                
+            </div>
+        </div>
     </div>
-    <div class="form-group">
-        <label for="description-produit">Description du produit:</label>
-        <textarea class="form-control" rows="5" id="comment"></textarea>
-    </div>
-    <div class="form-group">
-        <label for="sel1">Spécifications:</label>
-<!--*********************CREATION DE SPEC*******************************************        -->
-    <div>
-        <button type="button" class="btn btn-primary btn-create-spec">Create spec</button>
-        <!--quand click sur bouton btn-create-spec form d'ajout de spec s'affiche-->
-    <div class="form-spec">
-    <div class="form-group new-spec">
-        <label for="nom-produit">Nom de la spéc:</label>
-        <input type="text" class="form-control" id="nom-produits">
-    </div>
-    <div class="form-group">
-        <label for="description-produit">Description de la spec:</label>
-        <textarea class="form-control" rows="5" id="comment"></textarea>
-        <!--Ajouter soit dans spec basic, soit dans détail-->
-    <div class="btn-group" data-toggle="buttons">
-        <label class="btn btn-primary active">
-            <input type="radio" name="options" id="spec-basic" autocomplete="off" checked> Spec basic
-        </label>
-        <label class="btn btn-primary">
-            <input type="radio" name="options" id="spec-detail" autocomplete="off"> Spec detail
-        </label>
-    <div>
-        <button type="button" class="btn btn-primary btn-create-spec">Ajouter</button>
-    </div> 
 </div>
 <?php $this->stop('main_content') ?>
 

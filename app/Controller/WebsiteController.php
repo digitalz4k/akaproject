@@ -1,7 +1,7 @@
 <?php
 namespace Controller;
 
-class DashboardSettingsController extends \W\Controller\Controller
+class WebsiteController extends \W\Controller\Controller
 {
     protected $db;
     
@@ -10,7 +10,7 @@ class DashboardSettingsController extends \W\Controller\Controller
         $this->db = new \Model\WebsiteModel;
     }
     
-    public function getSettings()
+    public function websiteData()
     {
         if(!empty($_POST))
         {
