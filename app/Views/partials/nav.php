@@ -13,7 +13,7 @@ if($header_image == true)
 {
 ?>
   <div id="header-image">
-    <img src="<?= $this->assetUrl('img/' . $header_image_name ) ?>" alt="<?= $header_image_name ?>"/>
+    <img class="img-responsive" src="<?= $this->assetUrl('img/' . $header_image_name ) ?>" alt="<?= $header_image_name ?>"/>
   </div>
   <nav class="navbar navbar-default" style="margin-bottom: 200px;">
 <?php } else {

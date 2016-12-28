@@ -55,7 +55,7 @@
 	<div class="container">
   <h2 class="meet">Meet Aka Optics</h2>
   </div>
-    <div id="events" class="container ul">
+    <div id="events" class="container ul col-xs-12">
         
        
         <ul class="list-inline list-unstyled anim">
