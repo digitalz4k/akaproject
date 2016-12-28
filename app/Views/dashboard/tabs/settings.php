@@ -7,7 +7,7 @@
 	            <?= $this->insert('dashboard/navTabs'); ?>
 	        </div>
 	    
-	        <div id="dashboard-settings" class="col-xs-8">
+	        <div id="dashboard-settings" class="col-xs-8 col-xs-offset-1">
 	        	<div class="container">
 		        	<form method="POST" class="col-xs-12">
 		        		<h2>Website settings</h2>
@@ -21,9 +21,7 @@
 		        		</div>
 		        		<div class="form-group">
 		        			<label for="website_description">Describe your company</label>
-		        			<textarea class="form-control" id="website_description" name="website_description">
-		        				<?= $settings["website_description"] ?>
-		        			</textarea>
+		        			<textarea class="form-control" id="website_description" name="website_description"><?= $settings["website_description"] ?></textarea>
 		        		</div>
 		        		<h2>Contact settings</h2>
 		        		<div class="form-group">
