@@ -8,7 +8,7 @@
             <?= $this->insert('dashboard/navTabs'); ?>
         </div>
         
-        <div id="dashboard-events col-xs-8 col-xs-offset-2">
+        <div id="dashboard-events" class="col-xs-8 col-xs-offset-1">
             <div class="container">
                 <a href="/akaproject/public/aka-admin/events/add" class="btn btn-primary btn-lg pull-right"><i class="fa fa-plus"></i> Add new event</a>
                 <h2>Manage Events</h2>

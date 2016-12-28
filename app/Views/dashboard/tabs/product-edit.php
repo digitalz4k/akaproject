@@ -7,7 +7,7 @@
             <?= $this->insert('dashboard/navTabs'); ?>
         </div>
     
-        <div id="dashboard-users col-xs-8 col-xs-offset-2">
+        <div id="dashboard-users-edit" class="col-xs-8 col-xs-offset-2">
             <div class="container">
                 <h2>Edit Product</h2>
                 <p><strong><?= $msg ?></strong></p>
