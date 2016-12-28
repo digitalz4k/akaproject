@@ -19,7 +19,9 @@
                         <span class="badge"><a href="/akaproject/public/aka-admin/products/edit/<?= $product["id"] ?>">Edit</a></span>
                         <span class="badge"><a href="/akaproject/public/aka-admin/products/delete/<?= $product["id"] ?>">Delete</a></span>
                         <h4 class="list-group-item-heading">
-                            <img src="<?= $this->assetUrl('img/'.$product["picture_url"]) ?>" width="30" />
+                            <?php if(!isset($product["picture_url"])) { echo "No picture"; } else { ?>
+                            <img src="/akaproject/public/<?= $product["picture_url"] ?>" width="150" />
+                            <?php } ?>
                             <?= $product["name"] ?> <?= $product["subtitle"] ?>
                         </h4>
                     </li>

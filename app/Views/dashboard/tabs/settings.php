@@ -8,16 +8,20 @@
 	        </div>
 	    
 	        <div id="dashboard-settings col-xs-8">
-	        	<form method="POST">
-	        		<h2>Website settings</h2>
+	        	<h2>Website settings</h2>
+	        	<p><strong><?= $msg ?></strong></p>
+	        	<form enctype="multipart/form-data" method="POST">
 	        		<div class="form-group">
 	        			<label for="website_name">Set your website title</label>
 	        			<input type="text" id="website_name" name="website_name" value="<?= $settings["website_name"] ?>" />
 	        		</div>
 	        		<div class="form-group">
-	        			<label for="website_logo">Upload your company logo <img src="<?= $this->assetUrl('img/'.$settings["website_logo"]); ?>" width="45" /></label>
-	        			<input type="file" id="website_logo" name="website_logo" />
-	        		</div>
+		        		<label for="website_logo">
+		        			<?php if(!isset($settings["website_logo"])) { echo "No logo"; } else { ?>
+		        			<img src="/akaproject/public/<?= $settings["website_logo"]; ?>" width="45" /></label>
+		        			<?php } ?>
+		        		<input type="file" id="website_logo" name="website_logo" />
+		        	</div>
 	        		<div class="form-group">
 	        			<label for="website_description">Describe your company</label>
 	        			<textarea id="website_description" name="website_description">

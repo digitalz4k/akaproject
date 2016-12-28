@@ -6,14 +6,11 @@
 * - add a margin to nav because of the absolute position of the div#header-image
 */
 
-$this->engine->loadExtension(new League\Plates\Extension\URI($_SERVER['PATH_INFO']));
-
-
 if($header_image == true)
 {
 ?>
   <div id="header-image">
-    <img src="<?= $this->assetUrl('img/' . $header_image_name ) ?>" alt="<?= $header_image_name ?>"/>
+    <img src="/akaproject/public/uploads/<?= $header_image_name ?>" alt="<?= $header_image_name ?>"/>
   </div>
   <nav class="navbar navbar-default" style="margin-bottom: 200px;">
 <?php } else {
@@ -33,7 +30,7 @@ if($header_image == true)
           <span class="icon-bar"></span>
         </button>
         <!--logo ici-->
-        <a class="navbar-brand" href="/akaproject/public/"><img src="<?= $this->assetUrl('img/LogoAkaOptics.png') ?>"class="logo" alt=""></a>
+        <a class="navbar-brand" href="/akaproject/public/"><img src="/akaproject/public/uploads/LogoAkaOptics.png" class="logo" alt="Aka Optics"></a>
         
         
         

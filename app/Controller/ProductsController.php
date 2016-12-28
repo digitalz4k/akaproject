@@ -38,14 +38,43 @@
         public function productAdd ()
         {
             $this->show('dashboard/tabs/product-add');
+            /*if ($_FILES["website_logo"]["error"] !== 4)
+            {
+                $upload = new \Controller\UploadSingleton\UploadController("uploads/", ['png', 'gif', 'jpg', 'jpeg']);
+                $file = $upload->uploadThis($_FILES);
+                
+                if($file[0]["file_upload_path"])
+                {
+                    $_POST["website_logo"] = $file[0]["file_upload_path"];
+                } else {
+                    $this->show('dashboard/tabs/settings', ["msg" => "An error occurred: not updated. Please try again."]);
+                    return;
+                }
+            }*/
         }
         
         public function productEdit ($id)
         {
             if(!empty($_POST))
             {
+                
+                if ($_FILES["picture_url"]["error"] !== 4)
+                {
+                    $upload = new \Controller\UploadSingleton\UploadController("uploads/", ['png', 'gif', 'jpg', 'jpeg']);
+                    $file = $upload->uploadThis($_FILES);
+                    
+                    if($file[0]["file_upload_path"])
+                    {
+                        $_POST["picture_url"] = $file[0]["file_upload_path"];
+                    } else {
+                        $this->show('dashboard/tabs/settings', ["msg" => "An error occurred: not updated. Please try again."]);
+                        return;
+                    }
+                }
+                
                 $productUpdated = $_POST;
                 $req = $this->db->update($productUpdated, $id);
+                $this->redirectToRoute('dashboard_products_list');
             }
             else
             {

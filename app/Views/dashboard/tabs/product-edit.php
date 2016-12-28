@@ -11,7 +11,7 @@
             <div class="container">
                 <h2>Edit Product</h2>
                 <p><strong><?= $msg ?></strong></p>
-                <form method="POST">
+                <form enctype="multipart/form-data" method="POST">
                 
                     <div class="form-group ">
                         <label for="name">Title</label>
@@ -34,9 +34,11 @@
                     </div>
                     
                     <div class="form-group">
-                        <label for="picture">Picture</label>
-                        <img src="<?= $this->assetUrl('img/'.$product["picture_url"]) ?>"/>
-                        <input type="file" id="picture" name="picture">
+                        <label for="picture_url">Picture</label>
+                        <?php if(!isset($product["picture_url"])) { echo "No picture"; } else { ?>
+                        <img src="/akaproject/public/<?= $product["picture_url"] ?>" width="150"/>
+                        <?php } ?>
+                        <input type="file" id="picture_url" name="picture_url" value="<?= $product["picture_url"] ?>">
                     </div>
                         
                     <div class="form-group">

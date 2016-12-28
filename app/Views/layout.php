@@ -1,3 +1,4 @@
+<?php $this->engine->loadExtension(new League\Plates\Extension\URI($_SERVER['PATH_INFO'])); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +16,6 @@
 	<?= $this->section('css') ?>
 </head>
 <body>
-	
 
 	<header>
 		<?= $this->insert('partials/nav') ?>
