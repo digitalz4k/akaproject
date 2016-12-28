@@ -18,3 +18,9 @@ label {
 .main-dashboard {
     padding: 2em 0;
 }
+
+.dashboard_stats { }
+
+.dashboard_stats .number {
+    font-size: 4em;
+}

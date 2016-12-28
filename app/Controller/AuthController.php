@@ -28,7 +28,7 @@ class AuthController extends Controller
             {
                 $user = $this->db->find($id);
                 $this->auth->logUserIn($user);
-                $this->redirectToRoute('dashboard_home');
+                $this->redirectToRoute('dashboard');
             } else {
                 $this->show('auth/login', ["error" => "<p>Wrong email or password...</p>"]); // Affiche l'erreur sur la vue login
             }
