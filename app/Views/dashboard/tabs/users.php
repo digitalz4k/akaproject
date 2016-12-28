@@ -7,7 +7,7 @@
             <?= $this->insert('dashboard/navTabs'); ?>
         </div>
     
-        <div id="dashboard-users col-xs-8 col-xs-offset-2">
+        <div id="dashboard-users" class="col-xs-8 col-xs-offset-1">
             <div class="container">
                 <a href="/akaproject/public/users/add" class="btn btn-primary btn-lg pull-right"><i class="fa fa-plus"></i> Add new user</a>
                 <h2>Manage Users</h2>
