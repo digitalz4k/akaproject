@@ -7,7 +7,7 @@
             <?= $this->insert('dashboard/navTabs'); ?>
         </div>
     
-        <div id="dashboard-users-edit" class="col-xs-8 col-xs-offset-2">
+        <div id="dashboard-users-edit" class="col-xs-8 col-xs-offset-1">
             <div class="container">
                 <h2>Edit Product</h2>
                 <p><strong><?= $msg ?></strong></p>
@@ -15,28 +15,28 @@
                 
                     <div class="form-group ">
                         <label for="name">Title</label>
-                        <input type="text" id="name" name="name" value="<?= $product["name"] ?>">
+                        <input class="form-control" type="text" id="name" name="name" value="<?= $product["name"] ?>">
                     </div>
                     
                     <div class="form-group">
                         <label for="subtitle">Subtitle</label>
-                        <input type="text" id="subtitle" name="subtitle" value="<?= $product["subtitle"] ?>">
+                        <input class="form-control" type="text" id="subtitle" name="subtitle" value="<?= $product["subtitle"] ?>">
                     </div>
                     
                     <div class="form-group">
                         <label for="description">Description</label>
-                        <input type="text" id="description" name="description" value="<?= $product["description"] ?>">
+                        <input class="form-control" type="text" id="description" name="description" value="<?= $product["description"] ?>">
                     </div>
                     
                     <div class="form-group">
                         <label for="tagline">Tagline</label>
-                        <input type="text" id="tagline" name="tagline" value="<?= $product["tagline"] ?>">
+                        <input class="form-control" type="text" id="tagline" name="tagline" value="<?= $product["tagline"] ?>">
                     </div>
                     
                     <div class="form-group">
                         <label for="picture">Picture</label>
                         <img src="<?= $this->assetUrl('img/'.$product["picture_url"]) ?>"/>
-                        <input type="file" id="picture" name="picture">
+                        <input class="form-control" type="file" id="picture" name="picture">
                     </div>
                         
                     <div class="form-group">
