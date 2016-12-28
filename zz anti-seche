@@ -22,3 +22,9 @@ GitHub
                 
     Création de branche 
     git branche nom de la branche 
+    
+    
+    pour aller sur une branche 
+    git checkout nom de la branche 
+    
+    

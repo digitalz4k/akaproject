@@ -27,8 +27,7 @@
 		['GET', '/users/delete/[:id]', 'Users#usersDelete', 'dashboard_users_delete'],
 		['GET', '/users/list', 'Users#usersList', 'dashboard_users_list'],
 		/* DASHBOARD SETTINGS ROUTES */
-		['GET', '/settings', 'Settings#usersAdd', 'dashboard_settings'],
-		['POST', '/settings/edit/[i:id]', 'Settings#usersEdit', 'dashboard_settings_edit'],
+		['GET|POST', '/settings', 'DashboardWebsite#updateWebsiteInformations', 'dashboard_settings'],
 		/* AUTHENTICATION ROUTES */
 		['GET|POST', '/login', 'Auth#login', 'auth_login'],
 		['GET', '/logout', 'Auth#logout', 'auth_logout'],

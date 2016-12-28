@@ -119,8 +119,9 @@
   z-index:-1;
 }
 /* Adding a backgorund picture to each section */
+
 .swipe-item:nth-child(2):before {
-    background-image: url('http://placekitten.com/1500/1000');
+    background-image: url('../../../public/assets/img/Stack_actuator_deformable_mirrors.png');
 }
 .swipe-item:nth-child(3):before {
   background-image: url('http://placekitten.com/1500/1000');
@@ -134,6 +135,7 @@
 .swipe-item:nth-child(6):before {
   background-image: url('http://placekitten.com/1500/1000');
 }
+
 /*ACTIVE STYLES*/
 .swipe-item.active {
   animation: filter-animation .75s backwards;
