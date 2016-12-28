@@ -1,5 +1,5 @@
 <?php $this->engine->addData(["header_image" => true, "header_image_name" => $product["picture_url"]]); ?>
-<?php $this->layout('layout', ['title' => 'Product name']) ?>
+<?php $this->layout('layout', ['title' => $product["name"]]) ?>
 
 <?php $this->start('main_content') ?>
 
@@ -17,7 +17,7 @@
         <div class="col-xs-2"></div>
         <div class="col-xs-8 col-xs-offset-2">
             <p class="text-center lead text-primary">
-                <?php echo $product["accroche"]; ?>
+                <?php echo $product["tagline"]; ?>
             </p>
         </div>
         <div class="col-xs-2"></div>
