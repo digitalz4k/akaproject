@@ -9,7 +9,7 @@
     
         <div id="dashboard-users" class="col-xs-8 col-xs-offset-1">
             <div class="container">
-                <a href="/akaproject/public/users/add" class="btn btn-primary btn-lg pull-right"><i class="fa fa-plus"></i> Add new user</a>
+                <a href="/akaproject/public/aka-admin/users/add" class="btn btn-primary btn-lg pull-right"><i class="fa fa-plus"></i> Add new user</a>
                 <h2>Manage Users</h2>
                 <div class="list-group col-xs-10">
                     <?php foreach($users as $user) { ?>
