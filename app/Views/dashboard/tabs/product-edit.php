@@ -38,11 +38,11 @@
                         <?php if(!isset($product["picture_url"])) { echo "No picture"; } else { ?>
                         <img src="/akaproject/public/<?= $product["picture_url"] ?>" width="150"/>
                         <?php } ?>
-                        <input type="file" id="picture_url" name="picture_url" value="<?= $product["picture_url"] ?>">
+                        <input type="file" id="picture_url" name="picture_url" value="<?= $product["picture_url"] ?>" class="form-control">
                     </div>
                         
                     <div class="form-group">
-                        <button type="submit" class="btn btn-primary btn-create-spec">Update</button>
+                        <button type="submit" class="btn btn-primary btn-create-spec col-xs-3">Update</button>
                     </div> 
                     
                 </form>

@@ -9,6 +9,7 @@
     
         <div id="dashboard-users" class="col-xs-8 col-xs-offset-1">
             <div class="container">
+
                 <h2>Manage Users</h2>
                 <div class="list-group col-xs-10">
                     <?php foreach($users as $user) { ?>
