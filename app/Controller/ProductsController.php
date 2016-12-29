@@ -40,20 +40,44 @@
         
         public function productAdd ()
         {
-            $this->show('dashboard/tabs/product-add');
-            /*if ($_FILES["website_logo"]["error"] !== 4)
+            if(!empty($_POST))
             {
-                $upload = new \Controller\UploadSingleton\UploadController("uploads/", ['png', 'gif', 'jpg', 'jpeg']);
-                $file = $upload->uploadThis($_FILES);
-                
-                if($file[0]["file_upload_path"])
+                if ($_FILES["website_logo"]["error"] !== 4)
                 {
-                    $_POST["website_logo"] = $file[0]["file_upload_path"];
-                } else {
-                    $this->show('dashboard/tabs/settings', ["msg" => "An error occurred: not updated. Please try again."]);
-                    return;
+                    $upload = new \Controller\UploadSingleton\UploadController("uploads/", ['png', 'gif', 'jpg', 'jpeg']);
+                    $file = $upload->uploadThis($_FILES);
+                    
+                    if($file[0]["file_upload_path"])
+                    {
+                        $_POST["website_logo"] = $file[0]["file_upload_path"];
+                    } else {
+                        $this->show('dashboard/tabs/settings', ["msg" => "An error occurred: not updated. Please try again."]);
+                        return;
+                    }
                 }
-            }*/
+                
+                //Ajouter les specs
+                //Recupérer les ID des specs
+                //Ajouter le produit
+                //Rediriger vers liste produits
+            } else {
+                $specsTab = new \Model\SpecificationsModel;
+                $specs = $specsTab->findAll();
+                $this->show('dashboard/tabs/product-add', ["specs" => $specs]);
+            }
+        }
+        
+        public function specifications ()
+        {
+            $specsTab = new \Model\SpecificationsModel;
+            
+            if(!empty($_POST))
+            {
+                debug($_POST);
+            } else {
+                $specs = $specsTab->findAll();
+                $this->showJson($specs);
+            }
         }
         
         public function productEdit ($id)

@@ -21,6 +21,7 @@
 		
 		/* DASHBOARD PRODUCTS ROUTES */
 		['GET|POST', '/aka-admin/products/add', 'Products#productAdd', 'dashboard_products_add'],
+		['GET|POST', '/aka-admin/specifications', 'Products#specifications', 'dashboard_specifications'],
 		['GET|POST', '/aka-admin/products/edit/[:id]', 'Products#productEdit', 'dashboard_products_edit'],
 		['GET', '/aka-admin/products/delete/[:id]', 'Products#productDelete', 'dashboard_products_delete'],
 		['GET', '/aka-admin/products/list', 'Products#productsList', 'dashboard_products_list'],

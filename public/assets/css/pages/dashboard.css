@@ -24,3 +24,18 @@ label {
 .dashboard_stats .number {
     font-size: 4em;
 }
+
+#newspecContent {
+    position: absolute;
+    top: 0;
+    background: white;
+    padding: 2em;
+    width: 50vw;
+    height: 50vh;
+    border: 1px solid rgba(0,0,0,.2);
+    overflow-y: scroll;
+}
+
+#addSpec {
+    display: none;
+}
