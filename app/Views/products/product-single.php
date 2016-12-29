@@ -15,7 +15,7 @@ $this->engine->addData(["header_image" => true, "header_image_name" => $header_i
 <div id="product-single">
     <div class="row">
         <div class="col-xs-8 col-xs-offset-2">
-            <h2 class="text-primary text-center"><?php echo $product["name"]; ?> : <?php echo $product["subtitle"]; ?></h2>
+            <h2 class="text-primary text-center title"><?php echo $product["name"]; ?> : <?php echo $product["subtitle"]; ?></h2>
         </div>
         <div class="col-xs-2"></div>
         <div class="col-xs-8 col-xs-offset-2">
@@ -34,7 +34,7 @@ $this->engine->addData(["header_image" => true, "header_image_name" => $header_i
             <div id="basic" class="col-xs-12 blueflag panel panel-primary accordeon" data-toggle="collapse" data-target="#basicSpec">
                 <div class="container">
                     <div class="col-xs-12">
-                        <h3><i class="fa fa-plus" aria-hidden="true"></i> BASIC SPECIFICATIONS</h3>
+                        <h3><i class="fa fa-plus" aria-hidden="true"></i> BASIC SPECIFICATIONS </h3>
                     </div>
                 </div>
             </div>
@@ -63,7 +63,7 @@ $this->engine->addData(["header_image" => true, "header_image_name" => $header_i
             </div>
             <div class="row collapse" id="detailSpec">
                 <div class="col-xs-8 col-xs-offset-2">
-                    <h3 class="text-center">WE HAVE AN EXPERIENCE WITH A LARGE RANGE OF<br />
+                    <h3 class="text-center title">WE HAVE AN EXPERIENCE WITH A LARGE RANGE OF<br />
                     <SPAN class="text-primary">STACK ACTUATOR DEFORMABLE MIRRORS</SPAN></h3>
                 </div>
                 <?php foreach ($details as $detailSpec)

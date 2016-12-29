@@ -11,7 +11,7 @@
 #myCarousel{
 	background-size: cover;
 	width: 100%;
-	margin: 0 auto;
+	margin-top: 2%;
 
 }
 .carousel-inner{
@@ -162,14 +162,19 @@
 	/*position: absolute; bottom: 0; left: 0; right: 0*/
 }
 
-.anim {animation-duration: 6s; animation-name: slidein; animation-iteration-count: infinite; 
-animation-direction: alternate-reverse; }
+.anim {animation-duration: 8s; animation-name: slidein; animation-iteration-count: infinite; 
+animation-direction: alternate; }
+
+
+
 
 @keyframes slidein {
   from {margin-left: 100%; width: 300%;}
 
   to {margin-left: 0%; width: 100%;}}
 
-.ul {overflow: hidden;} .meet {color:#3498db;} .evcolor {color:#3498db;} 
+.ul {overflow: hidden;} .meet {color:#3498db; font-weight: bold} .evcolor {color:#3498db;} 
+
+@media(max-width:1024px) {.carousel-indicators{display:none;}
 
 

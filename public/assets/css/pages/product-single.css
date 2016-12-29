@@ -9,6 +9,7 @@
     cursor: pointer;
 }
 
+
 #productRequest {
     display: none;
     z-index: 9999;
@@ -18,3 +19,6 @@
     border: 1px solid rgba(0,0,0,.2);
     padding: 2em 1em;
 }
+
+.title {color:#3498db;}
+

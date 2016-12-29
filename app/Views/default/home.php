@@ -46,7 +46,7 @@
 		  </a>
 	</div>
 	<div class="container">
-  <h2 class="meet">Meet Aka Optics</h2>
+  <h2 class="meet">MEET AKA OPTICS</h2>
   </div>
     <div id="events" class="container ul col-xs-12">
         

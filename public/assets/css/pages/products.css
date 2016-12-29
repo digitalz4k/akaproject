@@ -85,7 +85,7 @@
 }
 .swipe-content p {
   color: #333;
-  font-size: 12px;
+  font-size: 14px;
 }
 .swipe-footer {
   position: absolute;
@@ -143,7 +143,12 @@
   filter: grayscale(0%);
   opacity: 1;
 }
+
 .swipe-item.active .swipe-img {
   filter: grayscale(0%);
   opacity: 1;
 }
+
+
+.justify{text-align: justify; text-align:center; color:#3498db; margin-top: 5%;}
+
