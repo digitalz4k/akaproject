@@ -13,8 +13,11 @@ class DefaultController extends Controller
 	{
 		//On construit ici les data pour les passer à la vue Home qui affiche les events
 		$tabEvents = new \Model\EventsModel;
+		$tabProducts = new \Model\ProductsModel;
 		$events = $tabEvents->findAll();
-		$this->show('default/home', ["events" => $events]);
+		$products = $tabProducts->findAll();
+		
+		$this->show('default/home', ["events" => $events, "products" => $products]);
 	}
 	
 	public function products()
