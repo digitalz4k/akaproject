@@ -5,10 +5,10 @@
 <div id="company" class="container">
 
 <section class="row">
-    <div class="col-xs-8 col-xs-offset-2">
+    <div class="col-xs-12">
         <h2 class="text-primary text-center">AKA OPTICS IS A RELIABLE PARTNER FOR YOUR PROJECTS, AS A MANUFACTURER OF ADAPTIVE OPTICS</h2>
     </div>
-    <div class="col-xs-4">
+    <div class="col-xs-12">
         <h3>History</h3>
         <p>
             AKA Optics SAS is a French company, founded in 2012 by Professor Alexis Kudryashov, Dr. of Sc. from Moscow, Russia, 
@@ -20,7 +20,7 @@
         </p>
         
     </div>
-    <div class="col-xs-4">
+    <div class="col-xs-12">
         <h3>AKA Optics' strategy</h3>
         <p>
             Our strategic partner is <a href="http://www.nightn.ru/" title="Active Optics NightN Ltd">Active Optics NightN Ltd</a>, a 15 people Russian company founded and managed by Alexis Kudryashov, 
@@ -31,7 +31,7 @@
             with more than 160 systems in operation in the top international lasers facilities.
         </p>
     </div>
-    <div class="col-xs-4">
+    <div class="col-xs-12">
         <h3>Mission</h3>
         <p>
             AKA Optics' mission is to design, manufacture and sell worldwide adaptive optics closed loop systems, 
@@ -46,20 +46,22 @@
     </div>
 </section>
 <section class="row">
-    <div class="col-xs-8 col-xs-offset-2">
+    <div class="col-xs-12">
         <h2 class="text-primary text-center">AKA OPTICS IS RUN BY EXPERIENCED MANAGERS</h2>
     </div>
-    <div class="col-xs-6">
+    <div class="col-xs-12 col-sm-12">
         <div class="row">
-            <div class="col-xs-2">Image1</div>
-            <div class="col-xs-4">
-                <p>Pr. Dr. of Sc.</p>
-                <p><span class="text-primary">Alexis KUDRYASHOV</span></p>
+            <div class="col-xs-6 col-sm-5 col-sm-offset-1 img-responsive">
+                <img src="<?= $this->assetUrl('img/A_Kudryashov.png') ?>" alt="Photo Alexis Kudryashov"/>
+            </div>
+            <div class="col-xs-6 col-sm-6">
+                
+                <p>Pr. Dr. of Sc. <span class="text-primary">Alexis KUDRYASHOV</span></p>
                 <p>President</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-6">
+            <div class="col-xs-12 col-sm-12">
                 <p class="text-primary">
                     He began his career as a PhD student in Lomonosov Moscow State University, 
                     the prestigious Russian University, doing research in adaptive optics, a new emerging field at this time. 
@@ -67,7 +69,7 @@
                     where the technology was invented, then at the Imperial College in the UK with another team of pioneers.
                 </p>
             </div>
-            <div class="col-xs-6">
+            <div class="col-xs-12 col-sm-12">
                 <p>
                     He is a professor at Moscow Open State University, now supervising PhDs students and trainees, 
                     with more than 250 papers published in peer reviewed international scientific research journals. 
@@ -84,23 +86,24 @@
             </div>
         </div>
     </div>
-    <div class="col-xs-6">
+    <div class="col-xs-12">
         <div class="row">
-            <div class="col-xs-2">Image2</div>
-            <div class="col-xs-4">
-                <p>Dr.</p>
-                <p><span class="text-primary">Gilles BORSONI</span></p>
+            <div class="col-xs-6 col-sm-5 col-sm-offset-1 img-responsive">
+                <img src="<?= $this->assetUrl('img/002z5a6ghmeqmd7.jpg') ?>" alt="Photo Gilles Borsoni"/>
+            </div>
+            <div class="col-xs-6">
+                <p>Dr. <span class="text-primary">Gilles BORSONI</span></p>
                 <p>Chief Executive Officer</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-6">
+            <div class="col-xs-12">
                 <p class="text-primary">
                     Doctor in atomic physics from the University Pierre et Marie Curie in Paris, 
                     with a specialization on large scale scientific instruments, trained in major laboratories in Western Europe and in California.
                 </p>
             </div>
-            <div class="col-xs-6">
+            <div class="col-xs-12">
                 <p>
                     He co-founded two nanotechnology companies in France, X-ion then QPlus, 
                     focusing on processing equipment for microelectronics and optoelectronics devices manufacturing, 
@@ -116,14 +119,14 @@
     </div>
 </section>
 <section class="row">
-    <div class="col-xs-8 col-xs-offset-2">
+    <div class="col-xs-12">
         <h2 class="text-primary text-center">AKA OPTICS BENEFITS FROM A STRONG PARTNERSHIP WITH THE ADAPTIVE OPTICS LEADER ACTIVE OPTICS NIGHTN</h2>
     </div>
-    <div class="row">
-        <div class="col-xs-3">
-            Photo été
+    
+        <div class="col-xs-12 col-sm-6 col-sm-offset-3 img-responsive">
+            <img src="<?= $this->assetUrl('img/summer.jpg') ?>" alt="Photo Active Optics NightN Ltd during summer"/>
         </div>
-        <div class="col-xs-6">
+        <div class="col-xs-12">
             <p>
                 <a href="http://www.nightn.ru/" title="Active Optics NightN Ltd">Active Optics NightN Ltd</a> is our sister company in Russia, with headquarters in Moscow, and a manufacturing facility in Shatura, 
                 120 km east of Moscow.
@@ -134,12 +137,12 @@
                 to the world top state-of-the art high power laser facilities. Alexis Kudryashov gained a solid reputation in the field.
             </p>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-3">
-            Photo hiver
+    
+    
+        <div class="col-xs-12 col-sm-6 col-sm-offset-3 img-responsive">
+            <img src="<?= $this->assetUrl('img/winter.jpg') ?>" alt="Photo Active Optics NightN Ltd during winter"/>
         </div>
-        <div class="col-xs-6">
+        <div class="col-xs-12 col-sm-6 col-sm-offset-3 ">
             <p>
                 Active Optics NightN Ltd.<br />
                 Sudostroitelnaya Str. 18, Bld. 5<br />
@@ -154,14 +157,14 @@
                 <a href="http://www.nightn.ru/" title="Active Optics NightN Ltd">http://www.nightn.ru</a>
             </p>
         </div>
-    </div>
+    
 </section>
 <section class="row">
-    <div class="col-xs-8 col-xs-offset-2">
+    <div class="col-xs-12">
         <h2 class="text-primary text-center">AKA OPTICS IS SUPPORTED BY GOVERNMENTAL ORGANISATIONS</h2>
     </div>
-    <div class="row">
-        <div class="col-xs-6">
+    
+        <div class="col-xs-12">
             <p>
                 PREMIUM PARTNERS 
             </p>
@@ -172,12 +175,12 @@
                 (Departmental General Council) and of the <a href="http://www.ccimp.com/" title="Chamber of commerce Marseilles" target="blank">Chamber of Commerce and Industry of Marseille Provence.</a>
             </P>
         </div>
-        <div class="col-xs-6">
-            Image1 Image2
+        <div class="col-xs-12 img-responsive">
+            Image1
         </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-6">
+    
+    
+        <div class="col-xs-12">
             <p>
                 LABEL PARTNERS 
             </p>
@@ -189,12 +192,12 @@
                 a brand new building dedicated to optic and photonic startups.
             </P>
         </div>
-        <div class="col-xs-6">
-            Image1 Image2
+        <div class="col-xs-12 img-responsive">
+            Image1 
         </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-6">
+    
+    
+        <div class="col-xs-12">
             <p>
                 EXTRA PARTNERS 
             </p>
@@ -202,10 +205,10 @@
                 AKA Optics is a member of OPTITEC, France largest National Competitive Cluster dedicated to Optics and Photonics.
             </P>
         </div>
-        <div class="col-xs-6">
-            Image1 Image2
+        <div class="col-xs-12">
+            Image1
         </div>
-    </div>
+    
 </section>
 </div>
 <?php $this->stop('main_content') ?>

@@ -10,7 +10,7 @@ if($header_image == true)
 {
 ?>
   <div id="header-image">
-    <img src="/akaproject/public/uploads/<?= $header_image_name ?>" alt="<?= $header_image_name ?>"/>
+    <img class="img-responsive" src="/akaproject/public/uploads/<?= $header_image_name ?>" alt="<?= $header_image_name ?>"/>
   </div>
   <nav class="navbar navbar-default" style="margin-bottom: 200px;">
 <?php } else {

@@ -35,7 +35,7 @@
                         <div class="center col-xs-11 col-xs-offset-1">
                           <h3><?= $achievement['title'] ?></h3>
                           <h5><?= $achievement['subtitle'] ?></h5>
-                          <img src="<?= $achievement['image'] ?>" class="image responsive"/>
+                          <img src="<?= $achievement['image'] ?>" class="img-responsive"/>
                           <h6><i class="fa fa-quote-left fa-3x" aria-hidden="true"></i> <?= $achievement['feedback'] ?></h6>
                         </div>
                     </div>
