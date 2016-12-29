@@ -22,3 +22,25 @@
 
 .title {color:#3498db;}
 
+.blueicon {
+    color: rgba(52, 152, 219,.5);
+}
+
+#product-single .spectitle {
+    color: white;
+    font-weight: bold;
+}
+
+#product-single .basictitle {
+    margin-top: 0;
+    font-weight: bold;
+    color: rgba(52, 152, 219,1);
+}
+
+#product-single .specbasic {
+    margin: 2em 0;
+}
+
+#product-single .subtitle {
+    font-weight: bold;
+}

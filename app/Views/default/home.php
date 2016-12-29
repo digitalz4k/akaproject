@@ -21,9 +21,9 @@
 		  <div class="carousel-inner" role="listbox">
 		  	<?php foreach($products as $key=>$product) { ?>
 		    <div class="item <?php if($key == 0) { echo 'active'; } ?>">
-		      	<a href="<?= $product["id"] ?>">
+		      	<a href="products/<?= $product["id"] ?>">
 		      		<?php if ($product["picture_url"]) { ?>
-		      		<img src="<?= $this->assetUrl('img/Bimorph_deformable_mirrors.png') ?>" alt="bimorph_deformable_mirrors">
+		      		<img src="/akaproject/public/<?= $product["picture_url"] ?>" alt="<?= $product["name"] ?>">
 		      		<?php } else { ?>
 			    	<img src="/akaproject/public/uploads/default_product.png" class="img-responsive" alt="<?= $product["name"] ?>">
 			    	<?php } ?>

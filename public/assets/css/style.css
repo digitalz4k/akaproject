@@ -60,6 +60,10 @@ footer {
     text-align: center;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: rgba(52, 152, 219,1);
+}
+
 /***** NAV ****/ 
 
 .navbar.navbar-default {
@@ -87,4 +91,8 @@ a:hover{
 .logo{
     width:111px;
     height:90px;
+}
+
+.btn-primary {
+    background: rgba(52, 152, 219,1)!important;
 }
