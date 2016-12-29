@@ -42,7 +42,9 @@ class DefaultController extends Controller
 	
 	public function contact()
 	{
-		$this->show('contact/contact');
+		$this->db = new \Model\WebsiteModel;
+		$datas = $this->db->findAll();
+		$this->show('contact/contact', ['datas' => $datas]);
 	}
 
 }

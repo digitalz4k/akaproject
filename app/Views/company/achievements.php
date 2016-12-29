@@ -22,6 +22,9 @@
                     
                     <?php } ?>
                     
+                    <a href="#" class="list-group-item text-center">
+                      <h4>Publications</h4>
+                    </a>
                   </div>
                 </div>
                 <div class="col-xs-9 ach-tab">
@@ -32,17 +35,29 @@
                   
                     <!-- First section -->
                     <div class="ach-tab-content <?php if($key==0) { echo 'active'; } ?>">
-                        <div class="center col-xs-11 col-xs-offset-1">
+                        <div class="col-xs-10 col-xs-offset-1 panel panel-default">
                           <h3><?= $achievement['title'] ?></h3>
                           <h5><?= $achievement['subtitle'] ?></h5>
                           <img src="<?= $achievement['image'] ?>" class="img-responsive"/>
-                          <h6><i class="fa fa-quote-left fa-3x" aria-hidden="true"></i> <?= $achievement['feedback'] ?></h6>
+                          <h6 class="text-center"><i class="fa fa-quote-left fa-3x" aria-hidden="true"></i> <?= $achievement['feedback'] ?></h6>
                         </div>
                     </div>
                     
                     <?php
                     } ?>
                     
+                    <!-- Second section -->
+                    <div class="ach-tab-content <?php if($key==0) { echo 'active'; } ?>">
+                      
+                      <?php foreach ($publications as $key => $publication) { ?>
+                        <div class="col-xs-10 col-xs-offset-1 panel panel-default">
+                          <h3 class="text-primary"><?= $publication['year'] ?></h3>
+                          <h5>Publication # <?= $publication['item'] ?></h5>
+                          <h5><?= $publication['title'] ?></h5>
+                        </div>
+                        <?php } ?>
+                        
+                    </div>
                 </div>
           </div>
         </div>

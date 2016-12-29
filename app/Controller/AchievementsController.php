@@ -13,7 +13,8 @@ class AchievementsController extends \W\Controller\Controller
     public function listAchievements()
     {
         $res = $this->db->findAll();
-        $this->show ('company/achievements', ["achievements" => $res]);
+        $publications = $this->listPublications();
+        $this->show ('company/achievements', ["achievements" => $res, "publications" => $publications]);
 
     }
     
@@ -28,6 +29,14 @@ class AchievementsController extends \W\Controller\Controller
         {
             $this->show('company/achievements');
         }
+    }
+    
+    private function listPublications()
+    {
+        $publicationTab = new \Model\PublicationsModel;
+        return $publicationTab->findAll();
+        
+
     }
 }
 

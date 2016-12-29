@@ -2,6 +2,8 @@ var specBtn = $('#newSpec')
 var closeBtn = $('#closeSpec')
 var formContainer = $('#newspecContent')
 
+formContainer.hide()
+
 specBtn.click(function(e){
    e.preventDefault()
    formContainer.fadeIn()
