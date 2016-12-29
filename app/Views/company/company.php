@@ -51,7 +51,7 @@
     </div>
     <div class="col-xs-6">
         <div class="row">
-            <div class="col-xs-2">Image1</div>
+            <div class="col-xs-2 img-rounded">Image1</div>
             <div class="col-xs-4">
                 <p>Pr. Dr. of Sc.</p>
                 <p><span class="text-primary">Alexis KUDRYASHOV</span></p>
@@ -86,7 +86,7 @@
     </div>
     <div class="col-xs-6">
         <div class="row">
-            <div class="col-xs-2">Image2</div>
+            <div class="col-xs-2 img-rounded">Image2</div>
             <div class="col-xs-4">
                 <p>Dr.</p>
                 <p><span class="text-primary">Gilles BORSONI</span></p>
@@ -120,10 +120,10 @@
         <h2 class="text-primary text-center">AKA OPTICS BENEFITS FROM A STRONG PARTNERSHIP WITH THE ADAPTIVE OPTICS LEADER ACTIVE OPTICS NIGHTN</h2>
     </div>
     <div class="row">
-        <div class="col-xs-3">
+        <div class="col-xs-3 img-rounded">
             Photo été
         </div>
-        <div class="col-xs-6">
+        <div class="col-xs-6 img-rounded">
             <p>
                 <a href="http://www.nightn.ru/" title="Active Optics NightN Ltd">Active Optics NightN Ltd</a> is our sister company in Russia, with headquarters in Moscow, and a manufacturing facility in Shatura, 
                 120 km east of Moscow.

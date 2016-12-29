@@ -103,7 +103,28 @@
 .img-responsive{
 	bottom:0 auto;
 }
+@media (max-width: 1024px){
+	.carousel-indicators{
+		display:none;
+	}
+	.carousel-caption h2{
+		font-size: 2em;
+	}
+	#home{
+		margin-top: 50px;
+	}
+}
 
+
+@media (max-width:640px){
+	.carousel-caption h2{
+		font-size: 1em;
+	}
+	#home{
+		margin-top: 20px;
+	}
+}
+/******************************************/
 #events {
 	margin-top: 2em;
 }
