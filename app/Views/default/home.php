@@ -6,48 +6,33 @@
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
 	  <!-- Indicators -->
 		  <ol class="carousel-indicators">
-		    <li data-target="#myCarousel" data-slide-to="0" class="active"><img src="<?= $this->assetUrl('img/Min_Bimorph_deformable_mirrors.png') ?>" class="img-responsive" alt="bimorph_deformable_mirrors"></li>
-		    <li data-target="#myCarousel" data-slide-to="1"><img src="<?= $this->assetUrl('img/Min_Stack_actuator_deformable_mirrors.png') ?>" class="img-responsive" alt="stack_actuator_deformable_mirrors" /></li>
-		    <li data-target="#myCarousel" data-slide-to="2"><img src="<?= $this->assetUrl('img/Min_Very_large_deformable_mirrors.png') ?>" class="img-responsive" alt="very_large_deformable_mirrors"></li>
-		    <li data-target="#myCarousel" data-slide-to="3"><img src="<?= $this->assetUrl('img/Min_Wavefront_sensor.png') ?>" class="img-responsive" alt="wavefront_sensor"></li>
+		  	<?php foreach($products as $key=>$product) { ?>
+		    <li data-target="#myCarousel" data-slide-to="<?= $key ?>" class="<?php if($key == 0) { echo 'active'; } ?>">
+		    	<?php if ($product["picture_url"]) { ?>
+		    	<img src="/akaproject/public/<?= $product["picture_url"] ?>" class="img-responsive" alt="<?= $product["name"] ?>">
+		    	<?php } else { ?>
+		    	<img src="/akaproject/public/uploads/default_product.png" class="img-responsive" alt="<?= $product["name"] ?>">
+		    	<?php } ?>
+		    </li>
+		    <?php } ?>
 		  </ol>
 	  <!-- Wrapper for slides -->
 	
 		  <div class="carousel-inner" role="listbox">
-		    <div class="item active">
-		      	<a href="#">
+		  	<?php foreach($products as $key=>$product) { ?>
+		    <div class="item <?php if($key == 0) { echo 'active'; } ?>">
+		      	<a href="<?= $product["id"] ?>">
+		      		<?php if ($product["picture_url"]) { ?>
 		      		<img src="<?= $this->assetUrl('img/Bimorph_deformable_mirrors.png') ?>" alt="bimorph_deformable_mirrors">
-		      		 <div class="carousel-caption">
-						<h2>Bimorph deformable mirrors</h2>
+		      		<?php } else { ?>
+			    	<img src="/akaproject/public/uploads/default_product.png" class="img-responsive" alt="<?= $product["name"] ?>">
+			    	<?php } ?>
+		      		<div class="carousel-caption">
+						<h2><?= $product["name"] ?></h2>
 					</div>
 		      	</a>
 		    </div>
-			<div class="item">
-		    	 <a href="#">
-		    	 	<img src="<?= $this->assetUrl('img/Stack_actuator_deformable_mirrors.png') ?>" alt="stack_actuator_deformable_mirrors">
-		    	 	<div class="carousel-caption">
-	      				<h2>Stack actuator deformable mirrors </h2>
-					</div>
-		    	 </a>
-		    </div>
-	
-		    <div class="item">
-		     	<a href="#">
-		     		<img src="<?= $this->assetUrl('img/Very_large_deformable_mirrors.png') ?>" alt="very_large_deformable_mirrors">
-		     		<div class="carousel-caption">
-	       				<h2>Very large deformable mirrors</h2>
-	       			</div>
-		     	</a>
-		    </div>
-	
-		    <div class="item">
-		     	<a href="#">
-		     		<img src="<?= $this->assetUrl('img/Wavefront_sensor.png') ?>" alt="wavefront_sensor">
-		     		 <div class="carousel-caption">
-	        			<h2>Wavefront sensor</h2>
-	        		</div>
-		     	</a>
-		    </div>
+		    <?php } ?>
 		  </div>
 	
 	  	<!-- Left and right controls -->
