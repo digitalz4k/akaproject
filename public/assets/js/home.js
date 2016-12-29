@@ -1,5 +1,6 @@
 $('.carousel.carousel-slider').carousel();
 
+
 function display ()
 {
     // récupérer l'event actif
