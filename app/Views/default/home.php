@@ -51,7 +51,7 @@
     <div id="events" class="container ul col-xs-12">
         
        
-        <ul class="list-inline list-unstyled anim">
+        <ul class="list-inline list-unstyled anim hidescreen">
         	
         <?php
 			if (count($events)>0)
