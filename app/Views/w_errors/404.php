@@ -7,7 +7,7 @@
         <div class="col-xs-12 text-center">
             <img class="responsive" src="<?= $this->assetUrl('img/jcvd404.png') ?>" alt="404 page not found"/>
         </div>
-        <div class="col-xs-12 text-center">
+        <div class="col-xs-12 text-center lost">
             <a class="btn btn-default btn-lg" href="<?= $this->url('home') ?>" title="Back to home page">Back to home page</a>
         </div>
     </div>

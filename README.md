@@ -72,6 +72,25 @@ $ > http://localhost/akaproject/public/
  - Develop the POO classes
  - Add administration section to manage content and data
 
+### Updated Todos 04/01/2017
+ - SEO
+   - Include unique H1 tag on every page
+   - Include meta tags for social networks
+   - Stick to ARIA specifications
+   - Vaildate site global SEO
+
+ - Style
+   - Include specific stylesheet on every page
+   - Modify css according to SEO
+   - Minify CSS files
+
+ - JS
+   - Include specific JS on every page
+   - Minify JS files
+
+ - Request form
+   - Request form mail feature
+
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
 
