@@ -45,7 +45,7 @@
 
 	<!-- Loading Javascript Files -->
 	<?= $this->section('js') ?>
-	<script src="<?= $this->assetUrl('js/main.js') ?>"></script>
+	<script src="<?= $this->assetUrl('js/main.min.js') ?>"></script>
 
 </body>
 </html>

@@ -62,5 +62,5 @@
         
 </div>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-<script src="../../public/assets/js/apiCountryRequest.js"></script>
+<script src="../../public/assets/js/apiCountryRequest.min.js"></script>
 

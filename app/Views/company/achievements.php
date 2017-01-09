@@ -71,5 +71,5 @@
 <?php $this->stop('css') ?>
 
 <?php $this->start('js') ?>
-	<script src="<?= $this->assetUrl('js/achievements.js') ?>"></script>
+	<script src="<?= $this->assetUrl('js/achievements.min.js') ?>"></script>
 <?php $this->stop('js') ?>

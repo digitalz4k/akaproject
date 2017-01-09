@@ -102,5 +102,5 @@ $this->engine->addData(["header_image" => true, "header_image_name" => $header_i
 
 
 <?php $this->start('js') ?>
-	<script src="<?= $this->assetUrl('js/product-single.js') ?>"></script>
+	<script src="<?= $this->assetUrl('js/product-single.min.js') ?>"></script>
 <?php $this->stop('js') ?>

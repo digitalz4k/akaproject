@@ -85,8 +85,8 @@ $ > http://localhost/akaproject/public/
    - Minify CSS files
 
  - JS
-   - Include specific JS on every page
-   - Minify JS files
+   - Include specific JS on every page / ok
+   - Minify JS files / ok
 
  - Request form
    - Request form mail feature

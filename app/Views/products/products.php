@@ -43,5 +43,5 @@
 <?php $this->start('js') ?>
     <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
 	<script src="<?= $this->assetUrl('libs/Swiper/Swiper.js') ?>"></script>
-	<script src="<?= $this->assetUrl('js/products.js') ?>"></script>
+	<script src="<?= $this->assetUrl('js/products.min.js') ?>"></script>
 <?php $this->stop('js') ?>

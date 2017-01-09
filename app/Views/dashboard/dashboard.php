@@ -33,5 +33,5 @@
 <?php $this->stop('css') ?>
 
 <?php $this->start('js') ?>
-	<script src="<?= $this->assetUrl('js/dashboard.js') ?>"></script>
+	<script src="<?= $this->assetUrl('js/dashboard.min.js') ?>"></script>
 <?php $this->stop('js') ?>
