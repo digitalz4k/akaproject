@@ -12,11 +12,11 @@ if($header_image == true)
   <div id="header-image">
     <img class="img-responsive" src="/akaproject/public/<?= $header_image_name ?>" alt="<?= $header_image_name ?>"/>
   </div>
-  <nav class="navbar navbar-default" style="margin-bottom: 200px;">
+  <nav class="navbar navbar-default" style="margin-bottom: 200px;" role="navigation">
 <?php } else {
 ?>
 
-  <nav class="navbar navbar-default">
+  <nav class="navbar navbar-default" role="navigation">
 <?php
 }
 ?>
@@ -35,11 +35,11 @@ if($header_image == true)
   
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="menu" <?= $this->uri('/products', 'class="selected"')?>><a href="/akaproject/public/products">Products</a></li>
-  		    <li class="menu" <?= $this->uri('/company', 'class="selected"')?>><a href="/akaproject/public/company">Company</a></li>
-  		    <li class="menu" <?= $this->uri('/achievements', 'class="selected"')?>><a href="/akaproject/public/achievements">Achievements</a></li>
-  		    <li class="menu" <?= $this->uri('/contact', 'class="selected"')?>><a href="/akaproject/public/contact">Contact</a></li>
+        <ul class="nav navbar-nav navbar-right" role="navigation">
+          <li class="menu" <?= $this->uri('/products', 'class="selected"')?> aria-label="products page"><a href="/akaproject/public/products">Products</a></li>
+  		    <li class="menu" <?= $this->uri('/company', 'class="selected"')?> aria-label="company page"><a href="/akaproject/public/company">Company</a></li>
+  		    <li class="menu" <?= $this->uri('/achievements', 'class="selected"')?> aria-label="achievements page"><a href="/akaproject/public/achievements">Achievements</a></li>
+  		    <li class="menu" <?= $this->uri('/contact', 'class="selected"')?> aria-label="contact page"><a href="/akaproject/public/contact">Contact</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
