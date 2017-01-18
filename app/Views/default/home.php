@@ -48,10 +48,10 @@
 	<div class="container">
   <h2 class="meet">MEET AKA OPTICS</h2>
   </div>
-    <div id="events" class="container ul col-xs-12">
+    <div id="events" class="container col-xs-12">
         
        
-        <ul class="list-inline list-unstyled anim hidescreen">
+        <ul class="list-inline list-unstyled hidescreen">
         	
         <?php
 			if (count($events)>0)

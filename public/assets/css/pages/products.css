@@ -10,6 +10,10 @@
 
 #products {}
 
+#products h2 {
+  margin: 1em;
+}
+
 /* RESTYLING BOOTSTRAP BUTTON */
 #products .btn {
   border-radius: 0;
@@ -41,6 +45,17 @@
     cursor: pointer;
     overflow: hidden;
 }
+.swipe-item:hover > .swipe-img {
+    filter: grayscale(0);
+    opacity: .5;
+    transition: all .3s ease;
+}
+
+.swipe-item:hover > .swipe-content h3 {
+    color: rgba(52, 152, 219,1.0);
+    transition: all .5s ease;
+}
+
 /*HELPER SECTION STYLE*/
 .swipe-helper { width: 220px; cursor: default; }
 .swipe-helper img {
@@ -73,6 +88,7 @@
   text-transform: uppercase;
   text-align: center;
   padding-top: 4em;
+  transition: all .2s ease;
 }
 .swipe-content .subtitle {
   position: absolute;
@@ -93,6 +109,10 @@
   left: 0;
   width: 100%;
   display: none;
+}
+
+.swipe-footer i {
+  color: #fff;
 }
 /*Animating background picture */
 @keyframes filter-animation {
@@ -126,6 +146,7 @@
   width: auto;
   filter: grayscale(100%);
   opacity: 0.1;
+  transition: all .2s ease;
 }
 
 /*ACTIVE STYLES*/
@@ -143,7 +164,6 @@
   filter: grayscale(0%);
   opacity: 1;
 }
-
 .swipe-item.active .swipe-img {
   filter: grayscale(0%);
   opacity: 1;

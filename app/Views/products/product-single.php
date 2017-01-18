@@ -13,64 +13,79 @@ $this->engine->addData(["header_image" => true, "header_image_name" => $header_i
 <?php $this->start('main_content') ?>
 
 <div id="product-single">
-    <div class="row">
-        <div class="col-xs-8 col-xs-offset-2">
-            <h2 class="text-primary text-center title"><?php echo $product["name"]; ?> : <?php echo $product["subtitle"]; ?></h2>
-        </div>
-        <div class="col-xs-2"></div>
-        <div class="col-xs-8 col-xs-offset-2">
-            <p class="text-justify">
-                <?php echo $product["description"]; ?> 
+   
+    
+    <h2 class="text-primary text-center title"><?php echo $product["name"]; ?> : <?php echo $product["subtitle"]; ?></h2>
+    
+    <section class="product-presentation">
+        
+        <div class="col-xs-12 col-sm-4 col-sm-offset-4">
+            <p>
+                <strong><?php echo $product["description"]; ?></strong>
             </p>
         </div>
-        <div class="col-xs-2"></div>
-        <div class="col-xs-8 col-xs-offset-2">
-            <p class="text-center lead text-primary">
+        
+        <div class="col-xs-12 col-sm-4 col-sm-offset-4">
+            <p>
                 <?php echo $product["tagline"]; ?>
             </p>
         </div>
-        <div class="col-xs-2"></div>
-        <section class="row">
-            <div id="basic" class="col-xs-12 blueflag panel panel-primary accordeon" data-toggle="collapse" data-target="#basicSpec">
-                <div class="container">
-                    <div class="col-xs-12">
-                        <h3 class="spectitle"><i class="fa fa-plus" aria-hidden="true"></i> BASIC SPECIFICATIONS </h3>
-                    </div>
+    </section>
+    
+    <section>
+        
+        <div id="basic" class="col-xs-12 blueflag panel panel-primary accordeon" data-toggle="collapse" data-target="#basicSpec">
+            <div class="container">
+                <div class="col-xs-12">
+                    <h3 class="spectitle"><i class="fa fa-plus" aria-hidden="true"></i> BASIC SPECIFICATIONS </h3>
                 </div>
             </div>
+        </div>
+        
+        <div class="container">
             <div class="row collapse" id="basicSpec">
                 <?php foreach ($basic as $basicSpec)
                 { ?>
                 <div class="row specbasic">
-                    <div class="col-xs-1 col-xs-offset-4">
+                    <div class="col-xs-1 col-sm-1 col-sm-offset-3">
                          <i class="fa fa-5x fa-<?php echo $basicSpec['icon']; ?> blueicon"></i>
                     </div>
-                    <div class="col-xs-6">
-                        <h3 class="text-primary basictitle"><?php echo $basicSpec['title']; ?></h3>
-                        <p class="col-xs-4">
+                    <div class="col-xs-10 col-xs-offset-1 col-sm-6">
+                        <h3 class="text-primary basicSpecTitle"><?php echo $basicSpec['title']; ?></h3>
+                        <p class="col-sm-8">
                             <?php echo $basicSpec['data']; ?>
                         </p>
                     </div>
                 </div>
                 <?php } ?>
             </div>
-        </section>
-        <section class="row">
-            <div id="detail" class="blueflag col-xs-12 panel panel-primary accordeon" data-toggle="collapse" data-target="#detailSpec">
-                <div class="container">
-                    <div class="col-xs-12">
-                        <h3 class="spectitle"><i class="fa fa-plus" aria-hidden="true"></i> DETAIL SPECIFICATIONS</h3>
-                    </div>
+        </div>
+        
+    </section>
+    
+    <section>
+        
+        <div id="detail" class="blueflag col-xs-12 panel panel-primary accordeon" data-toggle="collapse" data-target="#detailSpec">
+            <div class="container">
+                <div class="col-xs-12">
+                    <h3 class="spectitle"><i class="fa fa-plus" aria-hidden="true"></i> DETAIL SPECIFICATIONS</h3>
                 </div>
             </div>
-            <div class="row collapse" id="detailSpec">
-                <div class="col-xs-8 col-xs-offset-2">
-                    <h3 class="text-center title">WE HAVE AN EXPERIENCE WITH A LARGE RANGE OF<br />
-                    <span class="text-primary subtitle">STACK ACTUATOR DEFORMABLE MIRRORS</span></h3>
+        </div>
+        
+        <div class="collapse" id="detailSpec">
+            
+            
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+                    <h3 class="text-center title">
+                        WE HAVE AN EXPERIENCE WITH A LARGE RANGE OF<br />
+                        <span class="subtitle">STACK ACTUATOR DEFORMABLE MIRRORS</span>
+                    </h3>
                 </div>
+                
                 <?php foreach ($details as $detailSpec)
                 { ?>
-                <div class="col-xs-8 col-xs-offset-2">
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2">
                     <div class="row">
                         <div class="col-xs-4 col-xs-offset-1 panel panel-default">
                             <?php echo $detailSpec['title']; ?>
@@ -81,9 +96,11 @@ $this->engine->addData(["header_image" => true, "header_image_name" => $header_i
                     </div>
                 </div>
                 <?php } ?>
-            </div>
-        </section>
-    </div>
+                
+        </div>
+            
+        
+    </section>
     
     <div class="custom container text-center">
         <button id="request" class="btn btn-primary btn-lg">Get informations</button>

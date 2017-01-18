@@ -4,13 +4,13 @@
     }
 }
 
-.contact {
+#contact {
     margin-top: 1em;
     height: 530px;
 }
 
 .panel-default {
-    margin-top: 1em;
+    border: none;
 }
 
 iframe {
@@ -20,6 +20,10 @@ iframe {
     box-shadow: 2px 2px 5px 0px rgba(0,0,0,.75);
 }
 
-.contact h3 {
+.col-sm-12 iframe {
+    width: 100%;
+}
+
+#contact h3 {
     color: #333;
 }

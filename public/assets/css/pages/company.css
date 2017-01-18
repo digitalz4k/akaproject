@@ -38,10 +38,30 @@
     margin-bottom: 1em;
 }
 
+#management .col-sm-12:first-child, #management .col-xs-12:first-child {
+    padding-bottom: 2em;
+}
+
+#management .col-sm-12 img, #management .col-xs-12 img {
+    margin: 0 auto;
+}
+
+#management .col-sm-12 h4, #management .col-sm-12 p, #management .col-xs-12 h4, #management .col-xs-12 p {
+    text-align: center;
+}
+
 #sistercompany .second {
     margin-top: 1em;
 }
 
 #sistercompany .highlight {
     font-weight: bold;
+}
+
+#sistercompany img.img-responsive {
+    padding: 1em 0;
+}
+
+#sistercompany .col-xs-12 img {
+    width: 100%;
 }

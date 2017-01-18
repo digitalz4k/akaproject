@@ -41,7 +41,7 @@
                     deformable mirrors and wavefront sensors, using the technology transferred from <a href="http://www.nightn.ru/" title="Active Optics NightN Ltd">Active Optics NightN Ltd</a>.
                 </p>
             </div>
-            <div class="col-xs-8 col-xs-offset-2 text-primary text-center">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2 text-primary text-center">
                 <p class="vision_quote">
                     <i class="fa fa-quote-left"></i>
                     Our vision is to become a leader in high power lasers applications, in high resolution imaging applications, 
@@ -59,10 +59,10 @@
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-6 sided">
                 <div class="row profile_head">
-                    <div class="col-xs-6 col-sm-5 col-sm-offset-1 col-md-3">
+                    <div class="col-xs-12 col-sm-12 col-md-3">
                         <img class="img-responsive img-circle" src="<?= $this->assetUrl('img/A_Kudryashov.png') ?>" alt="Photo Alexis Kudryashov"/>
                     </div>
-                    <div class="col-xs-6 col-sm-6 col-md-8">
+                    <div class="col-xs-12 col-sm-12 col-md-8">
                         <h4>Pr. Dr. of Sc. <span class="text-primary">Alexis KUDRYASHOV</span></h4>
                         <p>President</p>
                     </div>
@@ -95,10 +95,10 @@
             </div>
             <div class="col-xs-12 col-sm-12 col-md-6">
                 <div class="row profile_head">
-                    <div class="col-xs-6 col-sm-5 col-sm-offset-1 col-md-3">
+                    <div class="col-xs-12 col-sm-12 col-md-3">
                         <img class="img-responsive img-circle" src="<?= $this->assetUrl('img/002z5a6ghmeqmd7.jpg') ?>" alt="Photo Gilles Borsoni"/>
                     </div>
-                    <div class="col-xs-6 col-sm-6 col-md-4">
+                    <div class="col-xs-12 col-sm-12 col-md-4">
                         <h4>Dr. <span class="text-primary">Gilles BORSONI</span></h4>
                         <p>Chief Executive Officer</p>
                     </div>
@@ -128,7 +128,7 @@
     </section>
     <section id="sistercompany" class="row">
         <div class="row">
-            <div class="col-xs-10 col-xs-offset-1">
+            <div class="col-xs-12 col-sm-10 col-sm-offset-1">
                 <h2 class="text-primary text-center">AKA OPTICS BENEFITS FROM A STRONG PARTNERSHIP WITH THE ADAPTIVE OPTICS LEADER ACTIVE OPTICS NIGHTN</h2>
             </div>
         </div>

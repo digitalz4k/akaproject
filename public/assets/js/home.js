@@ -24,14 +24,13 @@ function display ()
     }
 }
 
-    var eventFirst = $('#events ul li:first');
+var eventFirst = $('#events ul li:first');
 
+// ajout de la classe .active au premier event
+$(eventFirst).addClass("activeEvent");
 
-    // ajout de la classe .active au premier event
-    $(eventFirst).addClass("activeEvent");
-    
-    // Affichage du slider, délai 10s
-    setInterval(display, 10000);
+// Affichage du slider, délai 10s
+setInterval(display, 10000);
     
 
 

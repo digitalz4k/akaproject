@@ -8,19 +8,24 @@
 */
 /************************************
 *************CAROUSEL***************/
+header {
+	margin-bottom: 1em;
+}
 #myCarousel{
 	background-size: cover;
 	width: 100%;
-	margin-top: 2%;
+	margin-top: 0;
 
 }
 .carousel-inner{
 	width: 100%;
+	height: 60vh;
 	margin: auto;
 }
 
 .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
 	margin: 0 auto !important;
+	margin-top: -10vh;
 }
 
 .carousel-control  {
@@ -80,7 +85,7 @@
 .item .carousel-caption{
 	width:100% !important;
 	margin: 0 auto !important;
-
+	z-index:9999;
 	
 }
 
@@ -126,12 +131,15 @@
 }
 /******************************************/
 #events {
-	margin-top: 2em;
+	background: #3498db;
+	padding: 10px 0;
+	height: 3em;
+	overflow: hidden;
 }
 
 .event1 {
-	color: #3498db;
-	font-size: 32px;
+	color: #fff;
+	font-size: 1.2rem;
 	font-weight: bold;
 }
 
@@ -140,10 +148,28 @@
 }
 
 .activeEvent {
-	display: block !important;
+	position: absolute;
+	display: block!important;
+	top:10px;
+	left: 150vw;
 	text-align: center;
-	font-size: 2em;
+	font-size: 1rem;
+	font-weight: normal;
+	line-height: 1.1em;
+	color: #fff;
+	animation-duration: 8s;
+	animation-name: slidein;
+	width: 100%;
 }
+
+#events ul li a {
+	color: #fff;
+}
+
+#events ul li a:hover, #events ul li a:active {
+	color: #fff!important;
+}
+
 
 .event2 {
 	background-color: #3498db;
@@ -162,9 +188,6 @@
 	/*position: absolute; bottom: 0; left: 0; right: 0*/
 }
 
-.anim {animation-duration: 8s; animation-name: slidein; animation-iteration-count: infinite; 
-animation-direction: alternate; }
-
 @media (max-width: 1024px){
 	.hidescreen {
 		display:none;
@@ -175,12 +198,33 @@ animation-direction: alternate; }
 
 
 @keyframes slidein {
-  from {margin-left: 100%; width: 300%;}
+  0% {
+  	left: 150vw;
+  }
+  35% {
+  	left: 0vw;
+  }
+  75% {
+  	left: 0vw;
+  }
+  100% {
+  	left: 150vw;
+  }
+}
 
-  to {margin-left: 0%; width: 100%;}}
+.meet {
+	color:#3498db;
+	font-size: 1.2rem;
+	font-weight: bold;
+} 
 
-.ul {overflow: hidden;} .meet {color:#3498db; font-weight: bold} .evcolor {color:#3498db;} 
+.evcolor {color:#3498db;} 
 
-@media(max-width:1024px) {.carousel-indicators{display:none;}
+@media(max-width:1024px) {
+	
+	.carousel-indicators{
+		display:none;
+	}
+}
 
 
