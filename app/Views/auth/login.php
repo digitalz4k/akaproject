@@ -1,24 +1,32 @@
-<?php $this->layout('layout', ['title' => 'Home']) ?>
+<?php $this->layout('layout', ['title' => 'Login']) ?>
 
 <?php $this->start('main_content') ?>
-
-<div class="row">
-    <h1 class="text-primary text-center">Login</h1>
+<div id="dash-login">
     
-    <div class="has-error text-center"><?php echo $error; ?></div>
+    <div class="loginform">
+        <h1 class="text-center">Connect me</h1>
+        
+        <div class="has-error text-center"><?php echo $error; ?></div>
+        
+        <form action="/akaproject/public/login" method="POST" class="text-center">
+            <div class="form-group col-xs-12">
+                <input type="email" name="email" placeholder="Email"/>
+            </div>
+            <div class="form-group col-xs-12">
+                <input type="password" name="password" placeholder="Password"/>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="loginbtn" value="Sign In"/>
+            </div>
+            <div class="form-group">
+                <a class="btn-link" href="/akaproject/public/lostpassword">Lost password?</a>
+            </div>
+        </form>
+    </div>
     
-    <form action="/akaproject/public/login" method="POST" class="text-center">
-        <div class="form-group">
-            <input type="text" name="email" placeholder="Email"/>
-            <input type="password" name="password" placeholder="Password"/>
-        </div>
-        <div class="form-group">
-            <input type="submit" class="btn btn-primary btn-lg" value="Sign In"/>
-        </div>
-        <div class="form-group">
-            <a class="btn btn-link" href="/akaproject/public/lostpassword">Lost password?</a>
-        </div>
-    </form>
 </div>
-
 <?php $this->stop('main_content') ?>
+
+<?php $this->start('css') ?>
+	<link rel="stylesheet" href="<?= $this->assetUrl('css/pages/auth.css') ?>">
+<?php $this->stop('css') ?>

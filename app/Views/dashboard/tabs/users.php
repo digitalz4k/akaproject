@@ -1,37 +1,46 @@
 <?php $this->layout('layout', ['title' => 'Manage Users']) ?>
 
 <?php $this->start('main_content') ?>
-<div class="main-dashboard container">
-    <div class="row">
-        <div class="col-xs-2">
+<div class="main-dashboard">
+        <aside>
             <?= $this->insert('dashboard/navTabs'); ?>
-        </div>
+        </aside>
+        
+        <?= $this->insert('dashboard/dashboardNav'); ?>
     
-        <div id="dashboard-users" class="col-xs-8 col-xs-offset-1">
+        <div class="dashboard-wrapper">
+            
             <div class="container">
 
-                <h2>Manage Users</h2>
-                <div class="list-group col-xs-10">
-                    <?php foreach($users as $user) { ?>
-                    
-                    <li class="list-group-item">
-                        <span class="badge"><a href="/akaproject/public/aka-admin/users/edit/<?= $user["id"] ?>">Edit</a></span>
-                        <span class="badge"><a href="/akaproject/public/aka-admin/users/delete/<?= $user["id"] ?>">Delete</a></span>
-                        <h4 class="list-group-item-heading">
-                            <?= $user["first_name"] ?> <?= $user["last_name"] ?>
-                        </h4>
-                        <p class="list-group-item-text">
-                            ID: <?= $user["id"] ?> <br/>
-                            Email: <?= $user["email"] ?> <br/>
-                            Role: <?= $user["role"] ?> <br/>
-                        </p>
-                    </li>
-                    <?php } ?>
+                <h1>Manage Users</h1>
+                
+                <div class="row">
+                
+                    <div class="list-group col-xs-10">
+                        <?php foreach($users as $user) { ?>
+                        
+                        <li class="list-group-item">
+                            <span class="badge"><a href="/akaproject/public/aka-admin/users/edit/<?= $user["id"] ?>">Edit</a></span>
+                            <span class="badge"><a href="/akaproject/public/aka-admin/users/delete/<?= $user["id"] ?>">Delete</a></span>
+                            <h4 class="list-group-item-heading">
+                                <?= $user["first_name"] ?> <?= $user["last_name"] ?>
+                            </h4>
+                            <p class="list-group-item-text">
+                                ID: <?= $user["id"] ?> <br/>
+                                Email: <?= $user["email"] ?> <br/>
+                                Role: <?= $user["role"] ?> <br/>
+                            </p>
+                        </li>
+                        <?php } ?>
+                    </div>
+                
                 </div>
-                 <a href="/akaproject/public/aka-admin/users/add" class="btn btn-primary btn-lg col-xs-3"><i class="fa fa-plus"></i> Add new user</a>      
+                
+                 <a href="/akaproject/public/aka-admin/users/add" class="btn btn-primary btn-lg col-xs-3"><i class="fa fa-plus"></i> Add new user</a>
+            
             </div>
+             
         </div>
-    </div>
 </div>
 <?php $this->stop('main_content') ?>
 

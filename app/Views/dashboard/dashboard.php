@@ -1,30 +1,51 @@
 <?php $this->layout('layout', ['title' => 'Dashboard']) ?>
 
 <?php $this->start('main_content') ?>
-<div class="main-dashboard container">
-    <div class="row">
-        <div class="col-xs-2">
-            <?= $this->insert('dashboard/navTabs'); ?>
-        </div>
+<div class="main-dashboard">
+    <aside>
+        <?= $this->insert('dashboard/navTabs'); ?>
+    </aside>
     
-        <div id="dashboard-home" class="col-xs-10">
-            <div class="row">
-                <h1 class="text-center">Welcome, <span class="text-primary"><?= $w_user["first_name"] ?> <?= $w_user["last_name"] ?></span></h1>
-                <p class="text-center">Manage your website in this dashboard.</p>
-                
-                <?php foreach($stats as $key=>$stat) { ?>
-                    <div class="dashboard_stats col-xs-4">
-                        <h2><?= ucfirst($key); ?></h2>
-                        <p class="number">
-                            <?= $stat ?>
-                        </p>
-                    </div>
-                <?php } ?>
+    <?= $this->insert('dashboard/dashboardNav'); ?>
+    
+    <div class="dashboard-wrapper">
+            
+            <div class="container">
+
+                <div class="stats-wrapper">
+                    <h1>Stats Content Data</h1>
+                    <ul>
+                    <?php foreach($stats as $key=>$stat) { ?>
+                    
+                        <li class="col-xs-12 col-md-4">
+                            <div class="stat-container">
+                                <h2><?= ucfirst($key); ?></h2>
+                                <?php
+                                    $percent;
+                                    
+                                    if($stat == 0) { $percent = 0; }
+                                    else if($stat<2) { $percent = 25; }
+                                    else if($stat>=2 && $stat<4) { $percent = 50; }
+                                    else if($stat>=4 && $stat<8) { $percent = 75; }
+                                    else { $percent = 100; }
+                                ?>
+                                <figure class="stat" data-percent="<?= $percent ?>">
+                                    <figcaption><?= $stat ?></figcaption>
+                                    <svg width="200" height="200">
+                                      <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
+                                    </svg>
+                                </figure>
+                            </div>
+                        </li>
+                        
+                    <?php } ?>
+                    </ul>
+                </div>
                 
             </div>
-        </div>
-        
+            
     </div>
+        
 </div>
 <?php $this->stop('main_content') ?>
 
