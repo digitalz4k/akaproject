@@ -105,7 +105,7 @@ $this->engine->addData(["header_image" => true, "header_image_name" => $header_i
     <div class="custom container text-center">
         <button id="request" class="btn btn-primary btn-lg">Get informations</button>
         <div id="productRequest">
-            <?php $this->insert('products/productRequestForm') ?>;
+            <?php $this->insert('products/productRequestForm', ['product_id' => $product_id]) ?>;
         </div>
     </div>
     

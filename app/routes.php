@@ -5,7 +5,7 @@
 		/* GENERAL ROUTES */
 		['GET', '/', 'Default#home', 'home'],
 		['GET', '/products', 'Products#products', 'products'],
-		['GET', '/products/[:id]', 'Products#productsSingle', 'products_single'],
+		['GET|POST', '/products/[:id]', 'Products#productsSingle', 'products_single'],
 		['GET', '/company', 'Default#company', 'company'],
 		['GET', '/achievements', 'Achievements#listAchievements', 'list_achievements'],
 		['GET', '/contact', 'Default#contact', 'contact'],

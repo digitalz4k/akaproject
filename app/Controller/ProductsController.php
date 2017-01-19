@@ -18,17 +18,51 @@
         
         public function productsSingle ($id)
         {
-            if($this->db->find($id) > 0)
+            if(!empty($_POST))
             {
-                $spec = new \Model\SpecificationsModel;
-            
-                $basic = $spec -> basicSpec($id);
-                $details = $spec -> detailsSpec($id);
-                $product = $this->db -> find($id);
+                $website = new \Model\WebsiteModel;
+                $res = $website->findAll();
+                $form = $_POST;
                 
-                $this->show ('products/product-single', array('basic' => $basic, 'details' => $details, 'product' => $product));
+                $subject = 'Quotation request from your website';
+                //$email = $res[0]['website_contact_email'];
+                $email = 'balland.leonardo@outlook.fr';
+                
+                $message = 
+                    '<h2>You got a new product request from '.$form['firstname'] .' '. $form['lastname'] . '</h2>'
+                    . '<p>First name: '.$form['firstname'].'<p>'
+                    . '<p>Last name: '.$form['lastname'].'<p>'
+                    . '<p>Company: '.$form['company'].'<p>'
+                    . '<p>Country: '.$form['country'].'<p>'
+                    . '<p>Email: '.$form['email'].'<p>'
+                    . '<p>Laser beam: '.$form['spec1'].'<p>'
+                    . '<p>Laser power: '.$form['spec2'].'<p>'
+                    . '<p>Type1: '.$form['spec3'].'<p>'
+                    . '<p>Wavelength: '.$form['spec4'].'<p>'
+                    . '<p>Type2 : '.$form['spec5'].'<p>'
+                    . '<p>Comments : '.$form['comments'].'<p>'
+                    
+                ;
+                
+                $headers =  'From: '.$form['email']. '\r\n' .
+                            'Reply-To: webmaster@example.com' . '\r\n' .
+                            'X-Mailer: PHP/' . phpversion();
+                
+                mail($email, $subject, $message, $headers);
+                
             } else {
-                $this->showNotFound();
+                if($this->db->find($id) > 0)
+                {
+                    $spec = new \Model\SpecificationsModel;
+                
+                    $basic = $spec -> basicSpec($id);
+                    $details = $spec -> detailsSpec($id);
+                    $product = $this->db -> find($id);
+                    
+                    $this->show ('products/product-single', array('product_id'=> $id, 'basic' => $basic, 'details' => $details, 'product' => $product));
+                } else {
+                    $this->showNotFound();
+                }
             }
         }
         

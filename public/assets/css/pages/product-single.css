@@ -21,11 +21,16 @@
     z-index: 9999;
     position: fixed;
     left: 15%;
-    top: 5vh;
+    top: 1vh;
     width: 70%;
     background: white;
     border: 1px solid rgba(0,0,0,.2);
     padding: 2em 1em;
+}
+
+#productRequest form {
+            overflow-y: auto;
+        white-space: nowrap;
 }
 
 @media (max-width: 768px){
